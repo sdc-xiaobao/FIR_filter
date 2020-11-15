@@ -1,0 +1,135 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Nov  3 15:53:04 2020
+| Host         : DESKTOP-N9UHTE5 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_128_control_sets_placed.rpt
+| Design       : top_128
+| Device       : xc7s15
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    65 |
+| Unused register locations in slices containing registers |   164 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            3 |
+|      4 |            3 |
+|      6 |            1 |
+|      8 |            3 |
+|     10 |            2 |
+|     12 |            2 |
+|    16+ |           51 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             198 |           40 |
+| No           | No                    | Yes                    |            7716 |         1257 |
+| No           | Yes                   | No                     |             418 |           73 |
+| Yes          | No                    | No                     |             208 |           37 |
+| Yes          | No                    | Yes                    |             104 |           12 |
+| Yes          | Yes                   | No                     |              40 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------+---------------------------------------+---------------------------------------------------------------------------------------------+------------------+----------------+
+|                    Clock Signal                    |             Enable Signal             |                                       Set/Reset Signal                                      | Slice Load Count | Bel Load Count |
++----------------------------------------------------+---------------------------------------+---------------------------------------------------------------------------------------------+------------------+----------------+
+|  dac_instance/inst/inst/clk_out                    | dac_instance/DAC_Sync_i_1_n_0         |                                                                                             |                1 |              2 |
+| ~I_qspi_clk_IBUF_BUFG                              |                                       | I_qspi_cs_IBUF                                                                              |                1 |              2 |
+|  dac_instance/inst/inst/clk_out                    | dac_instance/DAC_Din_i_1_n_0          |                                                                                             |                1 |              2 |
+|  HDMI/clk_10/inst/clk_out1                         |                                       | HDMI/Mini_HDMI_Driver/U0/ClockGenInternal.ClockGenX/LockLostReset/aRst_int_0                |                1 |              4 |
+|  HDMI/clk_10/inst/clk_out1                         |                                       | fir_instance/ADC_En_OBUF                                                                    |                2 |              4 |
+|  HDMI/clk_10/inst/clk_out1                         |                                       | HDMI/Mini_HDMI_Driver/U0/ClockGenInternal.ClockGenX/in0                                     |                1 |              4 |
+|  uart/clk_div/CLK                                  |                                       |                                                                                             |                2 |              6 |
+|  I_qspi_clk_IBUF_BUFG                              | QSPI/u_qspi_slave/R_o_data[7]_i_1_n_0 | I_qspi_cs_IBUF                                                                              |                1 |              8 |
+|  I_qspi_clk_IBUF_BUFG                              | QSPI/u_qspi_slave/addr0               | I_qspi_cs_IBUF                                                                              |                2 |              8 |
+|  HDMI/clk_10/inst/clk_out1                         |                                       | HDMI/Mini_HDMI_Driver/U0/ClockGenInternal.ClockGenX/LockLostReset/SyncAsyncx/oSyncStages[1] |                1 |              8 |
+|  uart/clk_div/CLK                                  | uart/uart_rx/cur_st[1]                | uart/uart_rx/count                                                                          |                1 |             10 |
+|  dac_instance/inst/inst/clk_out                    |                                       | dac_instance/DAC_Cnt[4]_i_1_n_0                                                             |                1 |             10 |
+|  clk_100MHz_IBUF_BUFG                              | fir_instance/Clk_Divide0              |                                                                                             |                1 |             12 |
+| ~clk_100MHz_IBUF_BUFG                              |                                       |                                                                                             |                6 |             12 |
+|  I_qspi_clk_IBUF_BUFG                              | QSPI/u_qspi_slave/R_o_addr            | I_qspi_cs_IBUF                                                                              |                1 |             16 |
+|  uart/clk_div/CLK                                  | uart/uart_rx/cur_st[1]                |                                                                                             |                5 |             16 |
+|  HDMI/clk_10/inst/clk_out1                         | i_rst_IBUF                            |                                                                                             |                5 |             16 |
+|  HDMI/clk_10/inst/clk_out1                         |                                       | HDMI/Mini_HDMI_Driver/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0              |                4 |             20 |
+|  HDMI/clk_10/inst/clk_out1                         | HDMI/HDMI0/vsync_cnt21_out            | HDMI/Driver_ADC_0/Freq_Cal_0/adc_data_i_reg[0]_0                                            |                3 |             24 |
+|  clk_100MHz_IBUF_BUFG                              |                                       |                                                                                             |                7 |             26 |
+|  HDMI/clk_10/inst/clk_out1                         | HDMI/Driver_ADC_0/addr_wr0            | HDMI/Driver_ADC_0/addr_wr[0]_i_1_n_0                                                        |                4 |             30 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/ADC_En_OBUF                                                                    |                9 |             36 |
+|  I_qspi_clk_IBUF_BUFG                              |                                       | I_qspi_cs_IBUF                                                                              |                8 |             48 |
+|  HDMI/clk_10/inst/clk_out1                         | HDMI/Driver_ADC_0/flg_trigger         | HDMI/Driver_ADC_0/Freq_Cal_0/adc_data_i_reg[0]_0                                            |                5 |             48 |
+|  clk_100MHz_IBUF_BUFG                              |                                       | uart/clk_div/Count[0]_i_1_n_0                                                               |                8 |             64 |
+|  clk_100MHz_IBUF_BUFG                              |                                       | dac_instance/inst/inst/Count[0]_i_1_n_0                                                     |                8 |             64 |
+|  clk_100MHz_IBUF_BUFG                              |                                       | fir_instance/your_instance_name/inst/Count[0]_i_1_n_0                                       |                8 |             64 |
+|  HDMI/clk_10/inst/clk_out1                         |                                       | HDMI/Mini_HDMI_Driver/U0/DataEncoders[0].DataEncoder/SR[0]                                  |               12 |             64 |
+|  HDMI/clk_10/inst/clk_out1                         |                                       | HDMI/Driver_ADC_0/Clock_ADC/inst/Count[0]_i_1_n_0                                           |                8 |             64 |
+|  clk_100MHz_IBUF_BUFG                              |                                       | fir_instance/p_1_out[0]                                                                     |               24 |             68 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/sample_33[3]_i_1_n_0                                                           |               17 |            128 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/sample_25[3]_i_1_n_0                                                           |               18 |            128 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/sample_41[3]_i_1_n_0                                                           |               22 |            128 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/sample_17[3]_i_1_n_0                                                           |               24 |            128 |
+|  HDMI/clk_10/inst/clk_out1                         |                                       |                                                                                             |               25 |            154 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG | i_rst_IBUF                            |                                                                                             |               24 |            160 |
+|  HDMI/clk_10/inst/clk_out1                         |                                       | HDMI/Driver_ADC_0/Freq_Cal_0/adc_data_i_reg[0]_0                                            |               32 |            176 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/sample_1[6]_i_1_n_0                                                            |               31 |            192 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/add_level3_8[17]_i_2_n_0                                                       |               28 |            206 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/mult_65[16]_i_1_n_0                                                            |               38 |            206 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/mult_65[17]_i_2_n_0                                                            |               34 |            206 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/add_data_7[3]_i_2_n_0                                                          |               30 |            206 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/add_level_8[17]_i_2_n_0                                                        |               36 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/mult_14[3]_i_1_n_0                                                             |               44 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/mult_16[17]_i_2_n_0                                                            |               43 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/mult_16[5]_i_1_n_0                                                             |               37 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/mult_24[3]_i_2_n_0                                                             |               39 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/mult_36[12]_i_1_n_0                                                            |               37 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/sample_1[7]_i_1_n_0                                                            |               49 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/add_data_15[8]_i_2_n_0                                                         |               44 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/add_level2_10[17]_i_2_n_0                                                      |               35 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/add_level2_4[17]_i_2_n_0                                                       |               36 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/sample_25[6]_i_1_n_0                                                           |               46 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/mult_40[17]_i_2_n_0                                                            |               43 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/sample_31[7]_i_1_n_0                                                           |               42 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/add_data_39[8]_i_2_n_0                                                         |               40 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/sample_49[3]_i_1_n_0                                                           |               36 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/add_level_20[17]_i_2_n_0                                                       |               41 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/sample_33[6]_i_1_n_0                                                           |               44 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/sample_45[7]_i_1_n_0                                                           |               44 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/sample_49[6]_i_1_n_0                                                           |               42 |            252 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/sample_1[3]_i_1_n_0                                                            |               49 |            256 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/add_data_63[8]_i_2_n_0                                                         |               46 |            286 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/add_data_55[8]_i_2_n_0                                                         |               43 |            288 |
+|  fir_instance/your_instance_name/inst/clk_out_BUFG |                                       | fir_instance/add_data_59[8]_i_2_n_0                                                         |               44 |            288 |
++----------------------------------------------------+---------------------------------------+---------------------------------------------------------------------------------------------+------------------+----------------+
+
+

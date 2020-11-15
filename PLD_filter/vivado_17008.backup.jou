@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Nov  4 17:29:51 2020
+# Process ID: 17008
+# Current directory: F:/vivado_project/PLD_filter_128/PLD_filter_128/PLD_filter_128
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13324 F:\vivado_project\PLD_filter_128\PLD_filter_128\PLD_filter_128\PLD_filter_128.xpr
+# Log file: F:/vivado_project/PLD_filter_128/PLD_filter_128/PLD_filter_128/vivado.log
+# Journal file: F:/vivado_project/PLD_filter_128/PLD_filter_128/PLD_filter_128\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/vivado_project/PLD_filter_128/PLD_filter_128/PLD_filter_128/PLD_filter_128.xpr
+update_compile_order -fileset sources_1
+open_run synth_2 -name synth_2

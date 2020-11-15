@@ -1,0 +1,1558 @@
+
+*** Running vivado
+    with args -log top_128.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_128.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top_128.tcl -notrace
+Command: synth_design -top top_128 -part xc7s15ftgb196-1
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'rgb2dvi_0' is locked:
+* IP definition 'rgb2dvi (1.2)' for IP 'rgb2dvi_0' (customized with software release 2018.2) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [IP_Flow 19-2162] IP 'Clk_Division_0' is locked:
+* IP definition 'Clk_Division (1.0)' for IP 'Clk_Division_0' (customized with software release 2018.2) was not found in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 28248 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 449.500 ; gain = 104.762
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_128' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/top_128.v:22]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FIR_128' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/FIR_128.v:24]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Clk_Division_0' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/.Xil/Vivado-9724-DESKTOP-N9UHTE5/realtime/Clk_Division_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'Clk_Division_0' (1#1) [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/.Xil/Vivado-9724-DESKTOP-N9UHTE5/realtime/Clk_Division_0_stub.v:6]
+WARNING: [Synth 8-5788] Register sample_0_reg in module FIR_128 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/FIR_128.v:1387]
+WARNING: [Synth 8-5788] Register add_level2_14_reg in module FIR_128 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/FIR_128.v:1917]
+WARNING: [Synth 8-5788] Register add_level2_15_reg in module FIR_128 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/FIR_128.v:1918]
+WARNING: [Synth 8-5788] Register add_level2_16_reg in module FIR_128 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/FIR_128.v:1919]
+WARNING: [Synth 8-5788] Register add_level2_17_reg in module FIR_128 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/FIR_128.v:1920]
+INFO: [Synth 8-6155] done synthesizing module 'FIR_128' (2#1) [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/FIR_128.v:24]
+INFO: [Synth 8-6157] synthesizing module 'DACtest_128' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/DACtest_128.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/DACtest_128.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'DACtest_128' (3#1) [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/DACtest_128.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_top' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/uart_top.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clk_div' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clk_div' (4#1) [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/clk_div.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/uart_rx.v:4]
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter RECEIVE bound to: 1 - type: integer 
+	Parameter RECEIVE_END bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (5#1) [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/uart_rx.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (6#1) [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/uart_top.v:22]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_top' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/HDMI_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/.Xil/Vivado-9724-DESKTOP-N9UHTE5/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (7#1) [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/.Xil/Vivado-9724-DESKTOP-N9UHTE5/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'rgb2dvi_0' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/synth/rgb2dvi_0.vhd:71]
+	Parameter kGenerateSerialClk bound to: 1 - type: bool 
+	Parameter kClkPrimitive bound to: MMCM - type: string 
+	Parameter kRstActiveHigh bound to: 0 - type: bool 
+	Parameter kClkRange bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'rgb2dvi' declared at 'f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.vhd:61' bound to instance 'U0' of component 'rgb2dvi' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/synth/rgb2dvi_0.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'rgb2dvi' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.vhd:89]
+	Parameter kGenerateSerialClk bound to: 1 - type: bool 
+	Parameter kClkPrimitive bound to: MMCM - type: string 
+	Parameter kClkRange bound to: 2 - type: integer 
+	Parameter kRstActiveHigh bound to: 0 - type: bool 
+INFO: [Synth 8-638] synthesizing module 'ClockGen' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/ClockGen.vhd:46]
+	Parameter kClkRange bound to: 2 - type: integer 
+	Parameter kClkPrimitive bound to: MMCM - type: string 
+	Parameter kPolarity bound to: 1'b1 
+INFO: [Synth 8-3491] module 'ResetBridge' declared at 'f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/SyncAsyncReset.vhd:63' bound to instance 'LockLostReset' of component 'ResetBridge' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/ClockGen.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'ResetBridge' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/SyncAsyncReset.vhd:72]
+	Parameter kPolarity bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* keep = "TRUE" *) [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/SyncAsyncReset.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/SyncAsync.vhd:72]
+	Parameter kResetTo bound to: 1'b1 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/SyncAsync.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (8#1) [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (9#1) [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/SyncAsyncReset.vhd:72]
+	Parameter kResetTo bound to: 1'b0 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-3491] module 'SyncAsync' declared at 'f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/SyncAsync.vhd:61' bound to instance 'PLL_LockSyncAsync' of component 'SyncAsync' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/ClockGen.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized1' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/SyncAsync.vhd:72]
+	Parameter kResetTo bound to: 1'b0 
+	Parameter kStages bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized1' (9#1) [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/SyncAsync.vhd:72]
+WARNING: [Synth 8-614] signal 'pRst' is read in the process but is not in the sensitivity list [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/ClockGen.vhd:92]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 12.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 2.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'DVI_ClkGenerator' to cell 'MMCME2_ADV' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/ClockGen.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'ClockGen' (10#1) [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/xil_defaultlib/src/ClockGen.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'OutputSERDES' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/OutputSERDES.vhd:76]
+	Parameter kParallelWidth bound to: 10 - type: integer 
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-113] binding component instance 'OutputBuffer' to cell 'OBUFDS' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/OutputSERDES.vhd:83]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'SerializerMaster' to cell 'OSERDESE2' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/OutputSERDES.vhd:92]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'SerializerSlave' to cell 'OSERDESE2' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/OutputSERDES.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'OutputSERDES' (11#1) [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/OutputSERDES.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Encoder' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Encoder' (12#1) [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'rgb2dvi' (13#1) [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.vhd:89]
+INFO: [Synth 8-256] done synthesizing module 'rgb2dvi_0' (14#1) [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/synth/rgb2dvi_0.vhd:71]
+INFO: [Synth 8-6157] synthesizing module 'Driver_HDMI' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/Driver_HDMI.v:27]
+	Parameter H_ACTIVE_1280_720 bound to: 16'b0000010100000000 
+	Parameter H_FP_1280_720 bound to: 16'b0000000001101110 
+	Parameter H_SYNC_1280_720 bound to: 16'b0000000000101000 
+	Parameter H_BP_1280_720 bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE_1280_720 bound to: 16'b0000001011010000 
+	Parameter V_FP_1280_720 bound to: 16'b0000000000000101 
+	Parameter V_SYNC_1280_720 bound to: 16'b0000000000000101 
+	Parameter V_BP_1280_720 bound to: 16'b0000000000010100 
+	Parameter H_TOTAL_1280_720 bound to: 16'b0000011001110010 
+	Parameter V_TOTAL_1280_720 bound to: 16'b0000001011101110 
+	Parameter H_ACTIVE_1600_900 bound to: 16'b0000011001000000 
+	Parameter H_FP_1600_900 bound to: 16'b0000000000110000 
+	Parameter H_SYNC_1600_900 bound to: 16'b0000000000001100 
+	Parameter H_BP_1600_900 bound to: 16'b0000000001010000 
+	Parameter V_ACTIVE_1600_900 bound to: 16'b0000001110000100 
+	Parameter V_FP_1600_900 bound to: 16'b0000000000000011 
+	Parameter V_SYNC_1600_900 bound to: 16'b0000000000000101 
+	Parameter V_BP_1600_900 bound to: 16'b0000000000010010 
+	Parameter H_TOTAL_1600_900 bound to: 16'b0000011011001100 
+	Parameter V_TOTAL_1600_900 bound to: 16'b0000001110011110 
+	Parameter H_ACTIVE_1920_1080 bound to: 16'b0000011110000000 
+	Parameter H_FP_1920_1080 bound to: 16'b0000000001011000 
+	Parameter H_SYNC_1920_1080 bound to: 16'b0000000000101100 
+	Parameter H_BP_1920_1080 bound to: 16'b0000000010010100 
+	Parameter V_ACTIVE_1920_1080 bound to: 16'b0000010000111000 
+	Parameter V_FP_1920_1080 bound to: 16'b0000000000000100 
+	Parameter V_SYNC_1920_1080 bound to: 16'b0000000000000101 
+	Parameter V_BP_1920_1080 bound to: 16'b0000000000100100 
+	Parameter H_TOTAL_1920_1080 bound to: 16'b0000100010011000 
+	Parameter V_TOTAL_1920_1080 bound to: 16'b0000010001100101 
+INFO: [Synth 8-6155] done synthesizing module 'Driver_HDMI' (15#1) [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/Driver_HDMI.v:27]
+INFO: [Synth 8-6157] synthesizing module 'video_generator' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/video_generator.v:23]
+	Parameter Delay_Num bound to: 3'b010 
+	Parameter Video_H bound to: 12'b011110000000 
+	Parameter Video_L bound to: 12'b010000111000 
+WARNING: [Synth 8-6014] Unused sequential element set_x_i_reg was removed.  [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/video_generator.v:87]
+WARNING: [Synth 8-5788] Register adc_data_i_reg in module video_generator is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/video_generator.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'video_generator' (16#1) [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/video_generator.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Driver_ADC' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/Driver_ADC.v:23]
+	Parameter Default_Factor bound to: 31'b0000000000000000000000001100100 
+	Parameter Sample_Num bound to: 15'b100101100000000 
+INFO: [Synth 8-6157] synthesizing module 'Freq_Cal' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/Freq_Cal.v:23]
+	Parameter Trigger_Mode bound to: 1'b1 
+	Parameter Measure_Num_Bit bound to: 3'b100 
+	Parameter Trigger_Limit_T bound to: 100000000 - type: integer 
+	Parameter ST_IDLE bound to: 2'b00 
+	Parameter ST_START_H bound to: 2'b01 
+	Parameter ST_START_L bound to: 2'b10 
+	Parameter ST_WAIT bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'Freq_Cal' (17#1) [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/Freq_Cal.v:23]
+INFO: [Synth 8-638] synthesizing module 'Wave_Ram' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/Wave_Ram/synth/Wave_Ram.vhd:71]
+	Parameter C_FAMILY bound to: spartan7 - type: string 
+	Parameter C_XDEVICEFAMILY bound to: spartan7 - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: Wave_Ram.mem - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 19200 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 19200 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 15 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 0 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: WRITE_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 8 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 19200 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 19200 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 15 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 5 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 0 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     4.8621 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_1' declared at 'f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/Wave_Ram/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195313' bound to instance 'U0' of component 'blk_mem_gen_v8_4_1' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/Wave_Ram/synth/Wave_Ram.vhd:237]
+INFO: [Synth 8-256] done synthesizing module 'Wave_Ram' (28#1) [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/Wave_Ram/synth/Wave_Ram.vhd:71]
+INFO: [Synth 8-6155] done synthesizing module 'Driver_ADC' (29#1) [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/Driver_ADC.v:23]
+WARNING: [Synth 8-350] instance 'Driver_ADC_0' of module 'Driver_ADC' requires 14 connections, but only 11 given [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/HDMI_top.v:100]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_top' (30#1) [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/HDMI_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'QSPI_slave_tp' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/QSPI_slave_tp.v:3]
+INFO: [Synth 8-6157] synthesizing module 'qspi_slave' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/qspi_slave.v:24]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter addr_width bound to: 32 - type: integer 
+	Parameter dummy bound to: 4 - type: integer 
+	Parameter INS_QWrite_Quad bound to: 8'b00110010 
+	Parameter INS_FRead_Quad bound to: 8'b01101011 
+INFO: [Synth 8-6155] done synthesizing module 'qspi_slave' (31#1) [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/qspi_slave.v:24]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/.Xil/Vivado-9724-DESKTOP-N9UHTE5/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (32#1) [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/.Xil/Vivado-9724-DESKTOP-N9UHTE5/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (8) of module 'blk_mem_gen_0' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/QSPI_slave_tp.v:41]
+WARNING: [Synth 8-689] width (32) of port connection 'addrb' does not match port width (8) of module 'blk_mem_gen_0' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/QSPI_slave_tp.v:46]
+WARNING: [Synth 8-3848] Net web in module/entity QSPI_slave_tp does not have driver. [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/QSPI_slave_tp.v:37]
+WARNING: [Synth 8-3848] Net addrb in module/entity QSPI_slave_tp does not have driver. [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/QSPI_slave_tp.v:34]
+WARNING: [Synth 8-3848] Net dinb in module/entity QSPI_slave_tp does not have driver. [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/QSPI_slave_tp.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'QSPI_slave_tp' (33#1) [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/QSPI_slave_tp.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'top_128' (34#1) [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/top_128.v:22]
+WARNING: [Synth 8-3331] design QSPI_slave_tp has unconnected port rst_n
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_RST[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_LAT_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_REG_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MUX_REGCE[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port MEM_REGCE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port WE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ADDR_IN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port SBITERRIN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port DBITERRIN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux__parameterized0 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port MUX_RST[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port MEM_LAT_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port MEM_REG_RST
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port MUX_REGCE[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port MEM_REGCE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port WE
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[14]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[13]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[12]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[11]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[10]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[9]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ADDR_IN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port SBITERRIN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port SBITERRIN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port SBITERRIN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port SBITERRIN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port SBITERRIN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port SBITERRIN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port SBITERRIN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port SBITERRIN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port DBITERRIN[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port DBITERRIN[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port DBITERRIN[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port DBITERRIN[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port DBITERRIN[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port DBITERRIN[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port DBITERRIN[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port DBITERRIN[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_mux has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port DINB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port DINB[7]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port DINB[6]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port DINB[5]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port DINB[4]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port DINB[3]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port DINB[2]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port DINB[1]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port DINB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port SLEEP
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port INJECTSBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port INJECTDBITERR
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized3 has unconnected port ECCPIPECE
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized2 has unconnected port SSRA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized2 has unconnected port REGCEA
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized2 has unconnected port SSRB
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized2 has unconnected port WEB[0]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized2 has unconnected port DINB[8]
+WARNING: [Synth 8-3331] design blk_mem_gen_prim_wrapper__parameterized2 has unconnected port DINB[7]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:01:44 ; elapsed = 00:01:48 . Memory (MB): peak = 733.867 ; gain = 389.129
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:45 ; elapsed = 00:01:49 . Memory (MB): peak = 733.867 ; gain = 389.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:45 ; elapsed = 00:01:49 . Memory (MB): peak = 733.867 ; gain = 389.129
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0/Clk_Division_0_in_context.xdc] for cell 'fir_instance/your_instance_name'
+Finished Parsing XDC File [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0/Clk_Division_0_in_context.xdc] for cell 'fir_instance/your_instance_name'
+Parsing XDC File [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0/Clk_Division_0_in_context.xdc] for cell 'dac_instance/inst'
+Finished Parsing XDC File [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0/Clk_Division_0_in_context.xdc] for cell 'dac_instance/inst'
+Parsing XDC File [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0/Clk_Division_0_in_context.xdc] for cell 'HDMI/Driver_ADC_0/Clock_ADC'
+Finished Parsing XDC File [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/Clk_Division_0/Clk_Division_0/Clk_Division_0_in_context.xdc] for cell 'HDMI/Driver_ADC_0/Clock_ADC'
+Parsing XDC File [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'HDMI/clk_10'
+Finished Parsing XDC File [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'HDMI/clk_10'
+Parsing XDC File [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'QSPI/u_blk_mem_gen_0'
+Finished Parsing XDC File [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'QSPI/u_blk_mem_gen_0'
+Parsing XDC File [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'HDMI/Mini_HDMI_Driver/U0'
+Finished Parsing XDC File [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi.xdc] for cell 'HDMI/Mini_HDMI_Driver/U0'
+Parsing XDC File [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/constrs_1/new/system.xdc]
+WARNING: [Vivado 12-507] No nets matched 'I_qspi_clk_IBUF'. [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/constrs_1/new/system.xdc:56]
+Finished Parsing XDC File [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/constrs_1/new/system.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/constrs_1/new/system.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_128_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_128_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_128_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_128_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_128_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'HDMI/Mini_HDMI_Driver/U0'
+Finished Parsing XDC File [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/rgb2dvi_clocks.xdc] for cell 'HDMI/Mini_HDMI_Driver/U0'
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.207 . Memory (MB): peak = 846.965 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'QSPI/u_blk_mem_gen_0' at clock pin 'clkb' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:04 ; elapsed = 00:02:11 . Memory (MB): peak = 846.965 ; gain = 502.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:04 ; elapsed = 00:02:12 . Memory (MB): peak = 846.965 ; gain = 502.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100MHz. (constraint file  f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for HDMI/Driver_ADC_0/Ram_Wave. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for HDMI/Mini_HDMI_Driver. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for HDMI/Mini_HDMI_Driver/U0. (constraint file  F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/dont_touch.xdc, line 15).
+Applied set_property DONT_TOUCH = true for HDMI/Driver_ADC_0/Clock_ADC. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dac_instance/inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for fir_instance/your_instance_name. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for HDMI/clk_10. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for QSPI/u_blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:04 ; elapsed = 00:02:12 . Memory (MB): peak = 846.965 ; gain = 502.227
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'coeff6_reg[8:0]' into 'coeff5_reg[8:0]' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/FIR_128.v:139]
+INFO: [Synth 8-4471] merging register 'coeff24_reg[8:0]' into 'coeff23_reg[8:0]' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/FIR_128.v:157]
+INFO: [Synth 8-4471] merging register 'coeff25_reg[8:0]' into 'coeff23_reg[8:0]' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/FIR_128.v:158]
+INFO: [Synth 8-4471] merging register 'coeff26_reg[8:0]' into 'coeff23_reg[8:0]' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/FIR_128.v:159]
+INFO: [Synth 8-4471] merging register 'coeff65_reg[8:0]' into 'coeff64_reg[8:0]' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/FIR_128.v:198]
+WARNING: [Synth 8-6014] Unused sequential element coeff6_reg was removed.  [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/FIR_128.v:139]
+WARNING: [Synth 8-6014] Unused sequential element coeff24_reg was removed.  [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/FIR_128.v:157]
+WARNING: [Synth 8-6014] Unused sequential element coeff25_reg was removed.  [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/FIR_128.v:158]
+WARNING: [Synth 8-6014] Unused sequential element coeff26_reg was removed.  [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/FIR_128.v:159]
+WARNING: [Synth 8-6014] Unused sequential element coeff65_reg was removed.  [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/FIR_128.v:198]
+INFO: [Synth 8-5546] ROM "Clk_Divide" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff11" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff12" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff13" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff14" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff15" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff16" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff17" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff18" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff19" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff20" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff29" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff30" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff31" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff32" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff33" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff34" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff35" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff36" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff37" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff38" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff39" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff40" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff42" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff43" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff44" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff45" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff46" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff47" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff51" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff52" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff53" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff54" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff55" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff56" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff57" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff58" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff59" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff61" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff62" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff63" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff64" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cur_st_reg' in module 'uart_rx'
+INFO: [Synth 8-5546] ROM "nxt_st" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "receive_ack" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_i" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nxt_st" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "oscillo_en_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_current_reg' in module 'Freq_Cal'
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "max_data_o" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "trigger_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "en_trigger" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "flg_trigger" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'R_qspi_io1_out_en_reg' into 'R_qspi_io0_out_en_reg' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/qspi_slave.v:69]
+INFO: [Synth 8-4471] merging register 'R_qspi_io2_out_en_reg' into 'R_qspi_io0_out_en_reg' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/qspi_slave.v:70]
+INFO: [Synth 8-4471] merging register 'R_qspi_io3_out_en_reg' into 'R_qspi_io0_out_en_reg' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/qspi_slave.v:71]
+WARNING: [Synth 8-6014] Unused sequential element R_qspi_io1_out_en_reg was removed.  [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/qspi_slave.v:69]
+WARNING: [Synth 8-6014] Unused sequential element R_qspi_io2_out_en_reg was removed.  [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/qspi_slave.v:70]
+WARNING: [Synth 8-6014] Unused sequential element R_qspi_io3_out_en_reg was removed.  [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/qspi_slave.v:71]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                             0000
+                 RECEIVE |                              010 |                             0001
+             RECEIVE_END |                              100 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cur_st_reg' using encoding 'one-hot' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_IDLE |                             0100 |                               00
+              ST_START_H |                             0010 |                               01
+              ST_START_L |                             1000 |                               10
+                 ST_WAIT |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_current_reg' using encoding 'one-hot' in module 'Freq_Cal'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:09 ; elapsed = 00:02:17 . Memory (MB): peak = 846.965 ; gain = 502.227
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     35 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 12    
+	   2 Input     21 Bit       Adders := 8     
+	   2 Input     20 Bit       Adders := 16    
+	   2 Input     19 Bit       Adders := 32    
+	  10 Input     18 Bit       Adders := 1     
+	   3 Input     15 Bit       Adders := 4     
+	   2 Input     15 Bit       Adders := 2     
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 1     
+	   4 Input     12 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 66    
+	   2 Input      8 Bit       Adders := 2     
+	   3 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 6     
+	   3 Input      5 Bit       Adders := 9     
+	   4 Input      5 Bit       Adders := 3     
+	   8 Input      4 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 5     
++---XORs : 
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	               35 Bit    Registers := 1     
+	               32 Bit    Registers := 5     
+	               24 Bit    Registers := 2     
+	               21 Bit    Registers := 9     
+	               20 Bit    Registers := 17    
+	               19 Bit    Registers := 33    
+	               18 Bit    Registers := 65    
+	               15 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 128   
+	                8 Bit    Registers := 147   
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 10    
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 43    
++---Muxes : 
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   3 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 10    
+	   2 Input      9 Bit        Muxes := 53    
+	   3 Input      9 Bit        Muxes := 47    
+	   2 Input      8 Bit        Muxes := 18    
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 24    
+	   2 Input      6 Bit        Muxes := 7     
+	   2 Input      5 Bit        Muxes := 13    
+	   2 Input      4 Bit        Muxes := 7     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	  26 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 43    
+	   3 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top_128 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module FIR_128 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 8     
+	   2 Input     20 Bit       Adders := 16    
+	   2 Input     19 Bit       Adders := 32    
+	  10 Input     18 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 64    
++---Registers : 
+	               21 Bit    Registers := 9     
+	               20 Bit    Registers := 17    
+	               19 Bit    Registers := 33    
+	               18 Bit    Registers := 65    
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 125   
+	                8 Bit    Registers := 129   
++---Muxes : 
+	   3 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 50    
+	   3 Input      9 Bit        Muxes := 47    
+	   2 Input      8 Bit        Muxes := 12    
+	   2 Input      7 Bit        Muxes := 23    
+	   2 Input      6 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module DACtest_128 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	  26 Input      1 Bit        Muxes := 3     
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module SyncAsync 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module SyncAsync__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module ClockGen 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module TMDS_Encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 3     
+	   4 Input      5 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+Module Driver_HDMI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 6     
+	   4 Input     12 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module video_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Freq_Cal 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     35 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               35 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     35 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module bindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module blk_mem_gen_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module blk_mem_gen_mux__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module Driver_ADC 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     15 Bit       Adders := 4     
+	   2 Input     15 Bit       Adders := 2     
+	   3 Input     14 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               15 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module qspi_slave 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "coeff16" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff15" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff14" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff13" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff12" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff11" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff10" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff19" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff18" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff20" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff17" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff32" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff31" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff30" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff29" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff40" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff39" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff38" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff37" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff36" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff35" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff34" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff33" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff47" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff46" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff45" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff44" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff43" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff42" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff56" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff55" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff54" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff53" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff52" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff51" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff64" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff63" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff62" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff61" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff58" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff59" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff57" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "coeff1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'DataEncoders[1].DataEncoder/pC1_1_reg' into 'DataEncoders[1].DataEncoder/pC0_1_reg' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:115]
+INFO: [Synth 8-4471] merging register 'DataEncoders[1].DataEncoder/pC1_2_reg' into 'DataEncoders[1].DataEncoder/pC0_2_reg' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:149]
+INFO: [Synth 8-4471] merging register 'DataEncoders[1].DataEncoder/pVde_1_reg' into 'DataEncoders[0].DataEncoder/pVde_1_reg' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:110]
+INFO: [Synth 8-4471] merging register 'DataEncoders[1].DataEncoder/pVde_2_reg' into 'DataEncoders[0].DataEncoder/pVde_2_reg' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:150]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pC0_1_reg' into 'DataEncoders[1].DataEncoder/pC0_1_reg' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:114]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pC0_2_reg' into 'DataEncoders[1].DataEncoder/pC0_2_reg' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:148]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pC1_1_reg' into 'DataEncoders[1].DataEncoder/pC0_1_reg' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:115]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pC1_2_reg' into 'DataEncoders[1].DataEncoder/pC0_2_reg' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:149]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pVde_1_reg' into 'DataEncoders[0].DataEncoder/pVde_1_reg' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:110]
+INFO: [Synth 8-4471] merging register 'DataEncoders[2].DataEncoder/pVde_2_reg' into 'DataEncoders[0].DataEncoder/pVde_2_reg' [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:150]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[1].DataEncoder/pC1_1_reg was removed.  [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:115]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[1].DataEncoder/pC1_2_reg was removed.  [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:149]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[1].DataEncoder/pVde_1_reg was removed.  [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[1].DataEncoder/pVde_2_reg was removed.  [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:150]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[2].DataEncoder/pC0_1_reg was removed.  [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:114]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[2].DataEncoder/pC0_2_reg was removed.  [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:148]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[2].DataEncoder/pC1_1_reg was removed.  [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:115]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[2].DataEncoder/pC1_2_reg was removed.  [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:149]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[2].DataEncoder/pVde_1_reg was removed.  [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:110]
+WARNING: [Synth 8-6014] Unused sequential element DataEncoders[2].DataEncoder/pVde_2_reg was removed.  [f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/rgb2dvi_0/src/TMDS_Encoder.vhd:150]
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "oscillo_en_o" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5544] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/bindec_b.bindec_inst_b/ENOUT" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/trigger_gate_i_reg[0]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/trigger_gate_i_reg[1]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/trigger_gate_i_reg[2]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/trigger_gate_i_reg[3]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/trigger_gate_i_reg[4]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/trigger_gate_i_reg[5]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/trigger_gate_i_reg[6]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/trigger_gate_i_reg[7]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[2]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/oscillo_offset_i_reg[0]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/oscillo_offset_i_reg[1]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/oscillo_offset_i_reg[2]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[2]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/oscillo_offset_i_reg[3]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/oscillo_offset_i_reg[4]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/oscillo_offset_i_reg[5]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[2]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/oscillo_offset_i_reg[6]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[2]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/oscillo_offset_i_reg[7]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/oscillo_offset_i_reg[8]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/oscillo_offset_i_reg[9]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/oscillo_offset_i_reg[10]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[0]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[2]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[1]' (FDC) to 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HDMI/Driver_ADC_0/oscillo_scale_i_reg[3]' (FDC) to 'HDMI/video_adc/rgb_data_o_reg[15]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/sample_65_reg[3]' (FDC) to 'fir_instance/add_data_64_reg[3]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/sample_65_reg[4]' (FDC) to 'fir_instance/add_data_64_reg[4]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/sample_65_reg[5]' (FDC) to 'fir_instance/add_data_64_reg[5]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/sample_65_reg[6]' (FDC) to 'fir_instance/add_data_64_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/sample_65_reg[7]' (FDC) to 'fir_instance/add_data_64_reg[7]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/sample_65_reg[2]' (FDC) to 'fir_instance/add_data_64_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/sample_65_reg[0]' (FDC) to 'fir_instance/add_data_64_reg[0]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/sample_65_reg[1]' (FDC) to 'fir_instance/add_data_64_reg[1]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff1_reg[6]' (FDSE) to 'fir_instance/coeff1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff1_reg[7]' (FDSE) to 'fir_instance/coeff1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff1_reg[8]' (FDRE) to 'fir_instance/coeff1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff1_reg[3]' (FDRE) to 'fir_instance/coeff1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff1_reg[4] )
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff2_reg[6]' (FDSE) to 'fir_instance/coeff9_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff2_reg[7]' (FDSE) to 'fir_instance/coeff9_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff2_reg[8]' (FDSE) to 'fir_instance/coeff9_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff2_reg[3]' (FDRE) to 'fir_instance/coeff9_reg[3]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff2_reg[4]' (FDSE) to 'fir_instance/coeff9_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff2_reg[5]' (FDSE) to 'fir_instance/coeff9_reg[5]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff3_reg[6]' (FDSE) to 'fir_instance/coeff3_reg[7]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff3_reg[7]' (FDSE) to 'fir_instance/coeff3_reg[8]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff3_reg[8]' (FDSE) to 'fir_instance/coeff3_reg[4]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff3_reg[3]' (FDRE) to 'fir_instance/coeff3_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff3_reg[4]' (FDSE) to 'fir_instance/coeff3_reg[1]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff3_reg[5]' (FDSE) to 'fir_instance/coeff3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff4_reg[6]' (FDSE) to 'fir_instance/coeff5_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff4_reg[7]' (FDSE) to 'fir_instance/coeff5_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff4_reg[8]' (FDSE) to 'fir_instance/coeff5_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff4_reg[3]' (FDRE) to 'fir_instance/coeff5_reg[3]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff4_reg[4]' (FDSE) to 'fir_instance/coeff5_reg[4]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff4_reg[5]' (FDSE) to 'fir_instance/coeff5_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff5_reg[6]' (FDSE) to 'fir_instance/coeff5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff5_reg[7]' (FDSE) to 'fir_instance/coeff5_reg[8]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff5_reg[8]' (FDSE) to 'fir_instance/coeff5_reg[5]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff5_reg[3]' (FDRE) to 'fir_instance/coeff5_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff5_reg[4]' (FDSE) to 'fir_instance/coeff4_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff5_reg[5] )
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff7_reg[6]' (FDSE) to 'fir_instance/coeff7_reg[7]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff7_reg[7]' (FDSE) to 'fir_instance/coeff7_reg[8]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff7_reg[8]' (FDSE) to 'fir_instance/coeff7_reg[5]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff7_reg[3]' (FDRE) to 'fir_instance/coeff7_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff7_reg[4]' (FDSE) to 'fir_instance/coeff7_reg[1]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff7_reg[5] )
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff8_reg[6]' (FDSE) to 'fir_instance/coeff9_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff8_reg[7]' (FDSE) to 'fir_instance/coeff9_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff8_reg[8]' (FDSE) to 'fir_instance/coeff9_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff8_reg[3]' (FDRE) to 'fir_instance/coeff9_reg[3]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff8_reg[4]' (FDSE) to 'fir_instance/coeff9_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff8_reg[5]' (FDSE) to 'fir_instance/coeff9_reg[5]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/add_data_64_reg[7]' (FDC) to 'fir_instance/add_data_64_reg[8]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff57_reg[6]' (FDRE) to 'fir_instance/coeff57_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff57_reg[7]' (FDRE) to 'fir_instance/coeff57_reg[8]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff57_reg[8]' (FDRE) to 'fir_instance/coeff57_reg[5]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff57_reg[4] )
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff57_reg[5]' (FDRE) to 'fir_instance/coeff57_reg[1]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff58_reg[6]' (FDRE) to 'fir_instance/coeff60_reg[6]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff58_reg[7]' (FDRE) to 'fir_instance/coeff60_reg[7]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff58_reg[8]' (FDRE) to 'fir_instance/coeff60_reg[7]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff58_reg[3]' (FDSE) to 'fir_instance/coeff60_reg[3]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff58_reg[4]' (FDSE) to 'fir_instance/coeff60_reg[3]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff58_reg[5]' (FDRE) to 'fir_instance/coeff60_reg[7]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff59_reg[6]' (FDRE) to 'fir_instance/coeff59_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff59_reg[7]' (FDRE) to 'fir_instance/coeff59_reg[8]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff59_reg[8]' (FDRE) to 'fir_instance/coeff59_reg[5]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff59_reg[3]' (FDSE) to 'fir_instance/coeff59_reg[4]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff59_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff59_reg[5] )
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff60_reg[6]' (FDRE) to 'fir_instance/coeff58_reg[0]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff60_reg[7]' (FDRE) to 'fir_instance/coeff60_reg[8]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff60_reg[8]' (FDRE) to 'fir_instance/coeff60_reg[5]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff60_reg[3]' (FDSE) to 'fir_instance/coeff60_reg[4]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff60_reg[4]' (FDSE) to 'fir_instance/coeff60_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff60_reg[5]' (FDRE) to 'fir_instance/coeff58_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff61_reg[6]' (FDRE) to 'fir_instance/coeff61_reg[5]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff61_reg[7]' (FDRE) to 'fir_instance/coeff61_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff61_reg[8] )
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff61_reg[3]' (FDSE) to 'fir_instance/coeff61_reg[4]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff61_reg[4]' (FDSE) to 'fir_instance/coeff61_reg[2]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff61_reg[5]' (FDRE) to 'fir_instance/coeff61_reg[1]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff62_reg[6]' (FDRE) to 'fir_instance/coeff62_reg[5]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff62_reg[7]' (FDRE) to 'fir_instance/coeff62_reg[8]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff62_reg[8]' (FDRE) to 'fir_instance/coeff62_reg[0]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff62_reg[3]' (FDSE) to 'fir_instance/coeff62_reg[4]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff62_reg[4]' (FDSE) to 'fir_instance/coeff62_reg[1]'
+INFO: [Synth 8-3886] merging instance 'fir_instance/coeff63_reg[6]' (FDRE) to 'fir_instance/coeff63_reg[5]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff63_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff64_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff51_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff52_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff54_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff56_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff42_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff44_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff45_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff46_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff47_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff33_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff38_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff38_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff39_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff30_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff30_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff32_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff10_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff12_reg[3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff14_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff16_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff51_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff52_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff53_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff55_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff43_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff35_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff36_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff40_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff31_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff18_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff22_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff23_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff5_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff58_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff60_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff62_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff63_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff3_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff7_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff8_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff57_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff62_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff64_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff50_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff54_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff55_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff56_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff42_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff43_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff44_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff46_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff47_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff48_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff33_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff34_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff34_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff35_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff36_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff37_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff37_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff39_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff40_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff29_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff31_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff32_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff17_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff17_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff21_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff21_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff23_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff9_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff10_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff11_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff12_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff13_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\coeff13_reg[1] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff15_reg[0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fir_instance/\coeff16_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\HDMI/video_adc/rgb_data_o_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\Clk_Divide_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\HDMI/Driver_ADC_0/addr_rd_reg[14] )
+WARNING: [Synth 8-3332] Sequential element (coeff16_reg[4]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff16_reg[1]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff15_reg[0]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_8_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff14_reg[8]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff13_reg[1]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff13_reg[0]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_7_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_4_reg[19]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_4_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff12_reg[3]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff12_reg[0]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff11_reg[1]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_6_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff10_reg[4]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff10_reg[1]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_5_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_3_reg[19]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_3_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level3_2_reg[20]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level3_2_reg[19]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level3_2_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_12_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_11_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_6_reg[19]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_6_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_10_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff17_reg[1]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff17_reg[0]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_9_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_5_reg[19]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_5_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level3_3_reg[20]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level3_3_reg[19]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level3_3_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff32_reg[4]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff32_reg[1]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff31_reg[2]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff31_reg[0]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_16_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff30_reg[8]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff30_reg[4]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_15_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_8_reg[19]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_8_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_14_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_13_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_7_reg[19]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_7_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level3_4_reg[20]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level3_4_reg[19]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level3_4_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff39_reg[5]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff39_reg[1]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_20_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff38_reg[5]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff38_reg[3]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff37_reg[1]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff37_reg[0]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_19_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_10_reg[19]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_10_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff36_reg[2]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff36_reg[1]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff35_reg[2]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff35_reg[0]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_18_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff34_reg[1]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff34_reg[0]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff33_reg[8]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff33_reg[1]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_17_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_9_reg[19]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_9_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level3_5_reg[20]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level3_5_reg[19]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level3_5_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff47_reg[5]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff47_reg[0]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_24_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff46_reg[5]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff46_reg[0]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff45_reg[4]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_23_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_12_reg[19]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_12_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff44_reg[3]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff44_reg[0]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff43_reg[2]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff43_reg[1]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_22_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff42_reg[5]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff42_reg[1]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level_21_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_11_reg[19]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level2_11_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level3_6_reg[20]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level3_6_reg[19]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (add_level3_6_reg[18]) is unused and will be removed from module FIR_128.
+WARNING: [Synth 8-3332] Sequential element (coeff56_reg[5]) is unused and will be removed from module FIR_128.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\HDMI/Mini_HDMI_Driver /U0/\DataEncoders[1].DataEncoder/pC0_1_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\HDMI/Mini_HDMI_Driver /U0/\DataEncoders[1].DataEncoder/pC0_1_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\mult_2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\mult_7_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\mult_62_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\mult_49_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\mult_50_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\mult_44_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fir_instance/\mult_48_reg[0] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:42 ; elapsed = 00:02:53 . Memory (MB): peak = 846.965 ; gain = 502.227
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'HDMI/clk_10/clk_out1' to pin 'HDMI/clk_10/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'HDMI/Mini_HDMI_Driver/U0/PixelClk' to 'HDMIi_99/HDMI/HDMI0/vsync_cnt_reg[0]/C'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:58 ; elapsed = 02:08:24 . Memory (MB): peak = 846.965 ; gain = 502.227
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:01 ; elapsed = 02:08:27 . Memory (MB): peak = 869.414 ; gain = 524.676
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:07 ; elapsed = 02:08:34 . Memory (MB): peak = 922.555 ; gain = 577.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \QSPI/u_blk_mem_gen_0  has unconnected pin web[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \QSPI/u_blk_mem_gen_0  has unconnected pin addrb[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \QSPI/u_blk_mem_gen_0  has unconnected pin addrb[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \QSPI/u_blk_mem_gen_0  has unconnected pin addrb[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \QSPI/u_blk_mem_gen_0  has unconnected pin addrb[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \QSPI/u_blk_mem_gen_0  has unconnected pin addrb[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \QSPI/u_blk_mem_gen_0  has unconnected pin addrb[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \QSPI/u_blk_mem_gen_0  has unconnected pin addrb[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \QSPI/u_blk_mem_gen_0  has unconnected pin addrb[0]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \QSPI/u_blk_mem_gen_0  has unconnected pin dinb[7]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \QSPI/u_blk_mem_gen_0  has unconnected pin dinb[6]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \QSPI/u_blk_mem_gen_0  has unconnected pin dinb[5]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \QSPI/u_blk_mem_gen_0  has unconnected pin dinb[4]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \QSPI/u_blk_mem_gen_0  has unconnected pin dinb[3]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \QSPI/u_blk_mem_gen_0  has unconnected pin dinb[2]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \QSPI/u_blk_mem_gen_0  has unconnected pin dinb[1]
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \QSPI/u_blk_mem_gen_0  has unconnected pin dinb[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:09 ; elapsed = 02:08:36 . Memory (MB): peak = 922.555 ; gain = 577.816
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:10 ; elapsed = 02:08:36 . Memory (MB): peak = 922.555 ; gain = 577.816
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:11 ; elapsed = 02:08:37 . Memory (MB): peak = 922.555 ; gain = 577.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:11 ; elapsed = 02:08:37 . Memory (MB): peak = 922.555 ; gain = 577.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:11 ; elapsed = 02:08:38 . Memory (MB): peak = 922.555 ; gain = 577.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:11 ; elapsed = 02:08:38 . Memory (MB): peak = 922.555 ; gain = 577.816
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |clk_wiz_0      |         1|
+|2     |Clk_Division_0 |         3|
+|3     |blk_mem_gen_0  |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |Clk_Division_0    |     1|
+|2     |Clk_Division_0__1 |     1|
+|3     |Clk_Division_0__2 |     1|
+|4     |blk_mem_gen_0     |     1|
+|5     |clk_wiz_0         |     1|
+|6     |BUFG              |     1|
+|7     |CARRY4            |  1360|
+|8     |LUT1              |   152|
+|9     |LUT2              |  2621|
+|10    |LUT3              |  1550|
+|11    |LUT4              |  1462|
+|12    |LUT5              |  1047|
+|13    |LUT6              |   630|
+|14    |MMCME2_ADV        |     1|
+|15    |MUXF7             |    12|
+|16    |OSERDESE2         |     4|
+|17    |OSERDESE2_1       |     4|
+|18    |RAMB36E1          |     5|
+|19    |FDCE              |  3984|
+|20    |FDPE              |    10|
+|21    |FDRE              |   326|
+|22    |FDSE              |    36|
+|23    |IBUF              |    12|
+|24    |IOBUF             |     4|
+|25    |OBUF              |     6|
+|26    |OBUFDS            |     4|
++------+------------------+------+
+
+Report Instance Areas: 
++------+---------------------------------------------------+-----------------------------------------+------+
+|      |Instance                                           |Module                                   |Cells |
++------+---------------------------------------------------+-----------------------------------------+------+
+|1     |top                                                |                                         | 13251|
+|2     |  HDMI                                             |HDMI_top                                 |  1040|
+|3     |    Mini_HDMI_Driver                               |rgb2dvi_0                                |   349|
+|4     |      U0                                           |rgb2dvi                                  |   349|
+|5     |        \ClockGenInternal.ClockGenX                |ClockGen                                 |    12|
+|6     |          LockLostReset                            |ResetBridge_6                            |     3|
+|7     |            SyncAsyncx                             |SyncAsync_7                              |     2|
+|8     |          PLL_LockSyncAsync                        |SyncAsync__parameterized1                |     2|
+|9     |        ClockSerializer                            |OutputSERDES                             |     3|
+|10    |        \DataEncoders[0].DataEncoder               |TMDS_Encoder                             |   112|
+|11    |        \DataEncoders[0].DataSerializer            |OutputSERDES_1                           |     3|
+|12    |        \DataEncoders[1].DataEncoder               |TMDS_Encoder_2                           |   107|
+|13    |        \DataEncoders[1].DataSerializer            |OutputSERDES_3                           |     3|
+|14    |        \DataEncoders[2].DataEncoder               |TMDS_Encoder_4                           |   104|
+|15    |        \DataEncoders[2].DataSerializer            |OutputSERDES_5                           |     3|
+|16    |        LockLostReset                              |ResetBridge                              |     2|
+|17    |          SyncAsyncx                               |SyncAsync                                |     2|
+|18    |    Driver_ADC_0                                   |Driver_ADC                               |   430|
+|19    |      Ram_Wave                                     |Wave_Ram                                 |    42|
+|20    |        U0                                         |blk_mem_gen_v8_4_1                       |    42|
+|21    |          inst_blk_mem_gen                         |blk_mem_gen_v8_4_1_synth                 |    42|
+|22    |            \gnbram.gnativebmg.native_blk_mem_gen  |blk_mem_gen_top                          |    42|
+|23    |              \valid.cstr                          |blk_mem_gen_generic_cstr                 |    42|
+|24    |                \bindec_a.bindec_inst_a            |bindec                                   |     5|
+|25    |                \bindec_b.bindec_inst_b            |bindec_0                                 |     4|
+|26    |                \has_mux_b.B                       |blk_mem_gen_mux__parameterized0          |    27|
+|27    |                \ramloop[0].ram.r                  |blk_mem_gen_prim_width                   |     1|
+|28    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper                 |     1|
+|29    |                \ramloop[1].ram.r                  |blk_mem_gen_prim_width__parameterized0   |     1|
+|30    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized0 |     1|
+|31    |                \ramloop[2].ram.r                  |blk_mem_gen_prim_width__parameterized1   |     2|
+|32    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized1 |     2|
+|33    |                \ramloop[3].ram.r                  |blk_mem_gen_prim_width__parameterized2   |     1|
+|34    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized2 |     1|
+|35    |                \ramloop[4].ram.r                  |blk_mem_gen_prim_width__parameterized3   |     1|
+|36    |                  \prim_noinit.ram                 |blk_mem_gen_prim_wrapper__parameterized3 |     1|
+|37    |      Freq_Cal_0                                   |Freq_Cal                                 |   212|
+|38    |    HDMI0                                          |Driver_HDMI                              |   196|
+|39    |    video_adc                                      |video_generator                          |    64|
+|40    |  QSPI                                             |QSPI_slave_tp                            |   114|
+|41    |    u_qspi_slave                                   |qspi_slave                               |    98|
+|42    |  dac_instance                                     |DACtest_128                              |    17|
+|43    |  fir_instance                                     |FIR_128                                  | 11925|
+|44    |  uart                                             |uart_top                                 |   123|
+|45    |    clk_div                                        |clk_div                                  |    87|
+|46    |    uart_rx                                        |uart_rx                                  |    36|
++------+---------------------------------------------------+-----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:11 ; elapsed = 02:08:38 . Memory (MB): peak = 922.555 ; gain = 577.816
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 17 critical warnings and 538 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:12 ; elapsed = 02:08:20 . Memory (MB): peak = 922.555 ; gain = 464.719
+Synthesis Optimization Complete : Time (s): cpu = 00:03:11 ; elapsed = 02:08:38 . Memory (MB): peak = 922.555 ; gain = 577.816
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1398 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top_128' is not ideal for floorplanning, since the cellview 'FIR_128' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+429 Infos, 236 Warnings, 17 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:16 ; elapsed = 02:08:46 . Memory (MB): peak = 922.555 ; gain = 590.176
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/top_128.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_128_utilization_synth.rpt -pb top_128_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.284 . Memory (MB): peak = 922.555 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 15:50:32 2020...

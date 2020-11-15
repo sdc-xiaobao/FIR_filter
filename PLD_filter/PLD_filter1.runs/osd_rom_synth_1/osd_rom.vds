@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Nov 12 19:47:22 2020
+# Process ID: 14616
+# Current directory: C:/Users/24238/Desktop/PLD/PLD_filter1/PLD_filter/PLD_filter.runs/osd_rom_synth_1
+# Command line: vivado.exe -log osd_rom.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source osd_rom.tcl
+# Log file: C:/Users/24238/Desktop/PLD/PLD_filter1/PLD_filter/PLD_filter.runs/osd_rom_synth_1/osd_rom.vds
+# Journal file: C:/Users/24238/Desktop/PLD/PLD_filter1/PLD_filter/PLD_filter.runs/osd_rom_synth_1\vivado.jou
+#-----------------------------------------------------------
+source osd_rom.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 304.879 ; gain = 73.195
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP osd_rom, cache-ID = 684971252a28b02e.
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 12 19:47:57 2020...

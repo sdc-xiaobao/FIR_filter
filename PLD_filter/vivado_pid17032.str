@@ -1,0 +1,2313 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 17032
+License: Customer
+
+Current time: 	Mon Nov 02 22:24:27 CST 2020
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 25 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	F:/Vivado_2018/Vivado/2018.2/tps/win64/jre
+Java executable location: 	F:/Vivado_2018/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Moon
+User home directory: C:/Users/Moon
+User working directory: F:/vivado_workspace/PLD_filter_128/PLD_filter_128
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: F:/Vivado_2018/Vivado
+HDI_APPROOT: F:/Vivado_2018/Vivado/2018.2
+RDI_DATADIR: F:/Vivado_2018/Vivado/2018.2/data
+RDI_BINDIR: F:/Vivado_2018/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Moon/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Moon/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Moon/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	F:/Vivado_2018/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	F:/vivado_workspace/PLD_filter_128/PLD_filter_128/vivado.log
+Vivado journal file location: 	F:/vivado_workspace/PLD_filter_128/PLD_filter_128/vivado.jou
+Engine tmp dir: 	F:/vivado_workspace/PLD_filter_128/PLD_filter_128/.Xil/Vivado-17032-DESKTOP-N9UHTE5
+
+Xilinx Environment Variables
+----------------------------
+XILINX: F:/Vivado_2018/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: F:/Vivado_2018/Vivado/2018.2/ids_lite/ISE
+XILINX_FOR_ALTIUM_OVERRIDE:  
+XILINX_PLANAHEAD: F:/Vivado_2018/Vivado/2018.2
+XILINX_SDK: F:/Vivado_2018/SDK/2018.2
+XILINX_VIVADO: F:/Vivado_2018/Vivado/2018.2
+XILINX_VIVADO_HLS: F:/Vivado_2018/Vivado/2018.2
+
+
+GUI allocated memory:	168 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 522 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 52 MB (+52484kb) [00:00:13]
+// TclEventType: PROJECT_OPEN_DIALOG
+// [Engine Memory]: 487 MB (+359057kb) [00:00:13]
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: F:\vivado_workspace\PLD_filter_128\PLD_filter_128\PLD_filter_128.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// [GUI Memory]: 61 MB (+5918kb) [00:00:14]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 574 MB. GUI used memory: 36 MB. Current time: 11/2/20 10:24:29 PM CST
+// [Engine Memory]: 574 MB (+66258kb) [00:00:19]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 609 MB (+6228kb) [00:00:22]
+// [Engine Memory]: 647 MB (+7957kb) [00:00:24]
+// Tcl Message: open_project F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'F:/vivado_project/PLD_filter_128' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado_2018/Vivado/2018.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 846.965 ; gain = 136.273 
+// [GUI Memory]: 66 MB (+2057kb) [00:00:28]
+// Project name: PLD_filter_128; location: F:/vivado_workspace/PLD_filter_128/PLD_filter_128; part: xc7s15ftgb196-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (top_128.v) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), fir_instance : FIR_128 (FIR_128.v)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// [GUI Memory]: 72 MB (+3592kb) [00:00:36]
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, ck) - Node
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "QSPI_slave_tp"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// [GUI Memory]: 79 MB (+2777kb) [00:01:20]
+// Elapsed time: 18 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "qspi_slave"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "qspi_adder"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 43 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/QSPI_slave_tp.v w ] 
+// bx (ck):  Add Sources  : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/QSPI_slave_tp.v 
+// Tcl Message: close [ open F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/qspi_adder.v w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/qspi_adder.v 
+// Tcl Message: close [ open F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/qspi_slave.v w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/qspi_slave.v 
+// [Engine Memory]: 687 MB (+7550kb) [00:01:36]
+// I (ck): Define Modules: addNotify
+dismissDialog("Add Sources"); // bx (ck)
+selectList(PAResourceAtoD.DefineModulesDialog_NEW_SOURCE_FILES, "qspi_adder.v", 1); // L (O, I)
+selectList(PAResourceAtoD.DefineModulesDialog_NEW_SOURCE_FILES, "qspi_slave.v", 2); // L (O, I)
+selectList(PAResourceAtoD.DefineModulesDialog_NEW_SOURCE_FILES, "QSPI_slave_tp.v", 0); // L (O, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+dismissDialog("Define Modules"); // I (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 707 MB. GUI used memory: 46 MB. Current time: 11/2/20 10:25:54 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 407ms to process. Increasing delay to 3000 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, QSPI_slave_tp (QSPI_slave_tp.v)]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, QSPI_slave_tp (QSPI_slave_tp.v)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, QSPI_slave_tp (QSPI_slave_tp.v)]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 0, 31); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("QSPI_slave_tp.v", 4, 31); // ce (w, ck)
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'v'); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 87 MB (+4399kb) [00:02:11]
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // B (D, ck)
+selectCodeEditor("QSPI_slave_tp.v", 55, 366); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 70, 335); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, QSPI_slave_tp (QSPI_slave_tp.v)]", 6); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, QSPI_slave_tp (QSPI_slave_tp.v)]", 6); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, qspi_adder (qspi_adder.v)]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, qspi_adder (qspi_adder.v)]", 7, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_DISABLE, "Disable File"); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_SRC_DISABLE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property is_enabled false [get_files  F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/qspi_adder.v] 
+// bx (ck):  Disable File : addNotify
+dismissDialog("Disable File"); // bx (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, qspi_adder (qspi_adder.v)]", 7, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // aa (aj, ck)
+// [Engine Memory]: 722 MB (+1403kb) [00:02:44]
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // ad (aj, ck)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 688ms to process. Increasing delay to 4000 ms.
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 94 MB (+2459kb) [00:02:48]
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, qspi_adder (qspi_adder.v)]", 7, false); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources]", 7); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, qspi_adder.v]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Disabled Sources, qspi_adder.v]", 8, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ad (aj, Popup.HeavyWeightWindow)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (ck): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g (Q, aE): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (ck)
+// aE (ck): Remove Sources: addNotify
+// bx (aE):  Remove Sources : addNotify
+// Tcl Message: export_ip_user_files -of_objects  [get_files F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/qspi_adder.v] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/qspi_adder.v 
+// Tcl Message: file delete -force F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/qspi_adder.v 
+dismissDialog("Remove Sources"); // bx (aE)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, QSPI_slave_tp (QSPI_slave_tp.v)]", 6); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, QSPI_slave_tp (QSPI_slave_tp.v), u_qspi_slave : qspi_slave (qspi_slave.v)]", 7, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, QSPI_slave_tp (QSPI_slave_tp.v), u_qspi_slave : qspi_slave (qspi_slave.v)]", 7, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("qspi_slave.v", 6, 252); // ce (w, ck)
+typeControlKey((HResource) null, "qspi_slave.v", 'v'); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, QSPI_slave_tp (QSPI_slave_tp.v), u_blk_mem_gen_0 : xil_defaultlib.blk_mem_gen_0]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, QSPI_slave_tp (QSPI_slave_tp.v), u_blk_mem_gen_0 : xil_defaultlib.blk_mem_gen_0]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+// Elapsed time: 21 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 3, "Block Memory Generator", 0, true); // O (O, ck) - Node
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Block Memory Generator ; AXI4 ; Production ; Included ; xilinx.com:ip:blk_mem_gen:8.4", 3, "Block Memory Generator", 0, true, false, false, false, false, true); // O (O, ck) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "block"); // OverlayTextField (P, ck)
+// l (ck):  Customize IP : addNotify
+// TclEventType: LOAD_FEATURE
+// HMemoryUtils.trashcanNow. Engine heap size: 811 MB. GUI used memory: 50 MB. Current time: 11/2/20 10:28:04 PM CST
+// [Engine Memory]: 811 MB (+54979kb) [00:03:53]
+// [Engine Memory]: 937 MB (+89419kb) [00:03:58]
+// r (ck): Customize IP: addNotify
+// Elapsed time: 11 seconds
+dismissDialog("Customize IP"); // l (ck)
+selectComboBox("Memory Type (Memory_Type)", "True Dual Port RAM", 2); // z (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+setText("Defines the PortA Write Width(DINA)", "8"); // z (aZ, r)
+// HMemoryUtils.trashcanNow. Engine heap size: 950 MB. GUI used memory: 57 MB. Current time: 11/2/20 10:28:34 PM CST
+// Elapsed time: 27 seconds
+setText("Write Depth", "256"); // z (aZ, r)
+selectComboBox("Operating Mode (Operating_Mode_A)", "Read First", 1); // z (C, r)
+selectComboBox("Enable Port Type (Enable_A)", "Always Enabled", 0); // z (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // aY (C, r)
+selectComboBox("Operating Mode (Operating_Mode_B)", "Read First", 1); // z (C, r)
+selectComboBox("Enable Port Type (Enable_B)", "Always Enabled", 0); // z (C, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // r (ck)
+// bx (ck):  Customize IP : addNotify
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property -dict [list CONFIG.Memory_Type {True_Dual_Port_RAM} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {256} CONFIG.Read_Width_A {8} CONFIG.Operating_Mode_A {READ_FIRST} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Operating_Mode_B {READ_FIRST} CONFIG.Enable_B {Always_Enabled} CONFIG.Register_PortB_Output_of_Memory_Primitives {true} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Write_Rate {50} CONFIG.Port_B_Enable_Rate {100}] [get_ips blk_mem_gen_0] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'blk_mem_gen_0'... 
+// TclEventType: FILE_SET_CHANGE
+// aI (ck): Generate Output Products: addNotify
+dismissDialog("Customize IP"); // bx (ck)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (ck):  Managing Output Products : addNotify
+// Tcl Message: generate_target all [get_files  f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'blk_mem_gen_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'blk_mem_gen_0'... INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'blk_mem_gen_0'... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'blk_mem_gen_0'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] f:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs -jobs 8 blk_mem_gen_0_synth_1 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Nov  2 22:29:32 2020] Launched blk_mem_gen_0_synth_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/blk_mem_gen_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// [GUI Memory]: 100 MB (+1877kb) [00:05:24]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Elapsed time: 16 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 105 MB (+88kb) [00:07:36]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 518ms to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 446ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 283 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_128.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "qspi_slave.v", 3); // k (j, ck)
+selectCodeEditor("qspi_slave.v", 294, 220); // ce (w, ck)
+// [GUI Memory]: 114 MB (+3682kb) [00:10:58]
+// Elapsed time: 38 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("QSPI_slave_tp.v", 135, 193); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 40, 30); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 128, 220); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 42, 29); // ce (w, ck)
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'c'); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("top_128.v", 35, 316); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 66, 178); // ce (w, ck)
+selectCodeEditor("top_128.v", 22, 311); // ce (w, ck)
+selectCodeEditor("top_128.v", 17, 300); // ce (w, ck)
+selectCodeEditor("top_128.v", 42, 292); // ce (w, ck)
+selectCodeEditor("top_128.v", 49, 243); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1); // B (D, ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 2); // B (D, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectCodeEditor("top_128.v", 207, 128); // ce (w, ck)
+selectCodeEditor("top_128.v", 81, 124); // ce (w, ck)
+selectCodeEditor("top_128.v", 338, 203); // ce (w, ck)
+selectCodeEditor("top_128.v", 95, 145); // ce (w, ck)
+selectCodeEditor("top_128.v", 79, 160); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("top_128.v", 79, 219); // ce (w, ck)
+selectCodeEditor("top_128.v", 77, 236); // ce (w, ck)
+selectCodeEditor("top_128.v", 21, 240); // ce (w, ck)
+selectCodeEditor("top_128.v", 81, 255); // ce (w, ck)
+selectCodeEditor("top_128.v", 59, 272); // ce (w, ck)
+selectCodeEditor("top_128.v", 77, 278); // ce (w, ck)
+selectCodeEditor("top_128.v", 70, 295); // ce (w, ck)
+selectCodeEditor("top_128.v", 103, 297); // ce (w, ck)
+selectCodeEditor("top_128.v", 32, 296); // ce (w, ck)
+selectCodeEditor("top_128.v", 29, 299, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_128.v", 157, 295, false, true, false, false, false); // ce (w, ck) - Control Key
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 381, 219); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 105, 294); // ce (w, ck)
+selectCodeEditor("top_128.v", 258, 132); // ce (w, ck)
+selectCodeEditor("top_128.v", 100, 181); // ce (w, ck)
+selectCodeEditor("top_128.v", 291, 125); // ce (w, ck)
+selectCodeEditor("top_128.v", 291, 125, false, false, false, false, true); // ce (w, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 970 MB. GUI used memory: 65 MB. Current time: 11/2/20 10:37:09 PM CST
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 65, 148); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 292, 81); // ce (w, ck)
+selectCodeEditor("top_128.v", 292, 81, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 65, 163); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 229, 194); // ce (w, ck)
+selectCodeEditor("top_128.v", 78, 179); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("top_128.v", 49, 302); // ce (w, ck)
+selectCodeEditor("top_128.v", 49, 302, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 82, 296); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 220, 281); // ce (w, ck)
+selectCodeEditor("top_128.v", 62, 181); // ce (w, ck)
+selectCodeEditor("top_128.v", 62, 181, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 85, 183); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 64, 196); // ce (w, ck)
+selectCodeEditor("top_128.v", 64, 196, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 86, 203); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 56, 222); // ce (w, ck)
+selectCodeEditor("top_128.v", 56, 222, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 87, 217); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 68, 240); // ce (w, ck)
+selectCodeEditor("top_128.v", 68, 240, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 82, 238); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 73, 255); // ce (w, ck)
+selectCodeEditor("top_128.v", 73, 257, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 98, 258); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 70, 278); // ce (w, ck)
+selectCodeEditor("top_128.v", 70, 278, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 105, 271); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 64, 304); // ce (w, ck)
+selectCodeEditor("top_128.v", 287, 246); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_128.v", 110, 218); // ce (w, ck)
+selectCodeEditor("top_128.v", 319, 231); // ce (w, ck)
+selectCodeEditor("top_128.v", 170, 163); // ce (w, ck)
+selectCodeEditor("top_128.v", 170, 163, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 111, 162); // ce (w, ck)
+selectCodeEditor("top_128.v", 377, 141); // ce (w, ck)
+selectCodeEditor("top_128.v", 330, 222); // ce (w, ck)
+selectCodeEditor("top_128.v", 317, 224); // ce (w, ck)
+selectCodeEditor("top_128.v", 317, 224, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 103, 298); // ce (w, ck)
+selectCodeEditor("top_128.v", 103, 298, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 356, 286); // ce (w, ck)
+// Elapsed time: 73 seconds
+selectCodeEditor("top_128.v", 446, 91); // ce (w, ck)
+selectCodeEditor("top_128.v", 385, 198); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 116, 222); // ce (w, ck)
+selectCodeEditor("top_128.v", 114, 238); // ce (w, ck)
+selectCodeEditor("top_128.v", 114, 258); // ce (w, ck)
+selectCodeEditor("top_128.v", 117, 279); // ce (w, ck)
+selectCodeEditor("top_128.v", 113, 291); // ce (w, ck)
+selectCodeEditor("top_128.v", 111, 315); // ce (w, ck)
+selectCodeEditor("top_128.v", 389, 304); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1); // B (D, ck)
+// Elapsed time: 20 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 7); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 9, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 44 seconds
+selectCodeEditor("system.xdc", 23, 276); // ce (w, ck)
+// Elapsed time: 32 seconds
+selectCodeEditor("system.xdc", 16, 271); // ce (w, ck)
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 404, 256); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Nov  2 22:42:37 2020] Launched synth_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/runme.log [Mon Nov  2 22:42:38 2020] Launched impl_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 3883ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 1013ms to process. Increasing delay to 4000 ms.
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 562 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-64] Illegal IOStandard configured for port 'TMDS_Tx_Clk_N'. I/O port 'TMDS_Tx_Clk_N' is differential, but has single-ended IOStandard value LVCMOS33.. ]", 10, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-64] Illegal IOStandard configured for port 'TMDS_Tx_Clk_N'. I/O port 'TMDS_Tx_Clk_N' is differential, but has single-ended IOStandard value LVCMOS33.. ]", 10, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-64] Illegal IOStandard configured for port 'TMDS_Tx_Clk_N'. I/O port 'TMDS_Tx_Clk_N' is differential, but has single-ended IOStandard value LVCMOS33.. , [Place 30-64] Illegal IOStandard configured for port 'TMDS_Tx_Data_N[2]'. I/O port 'TMDS_Tx_Data_N[2]' is differential, but has single-ended IOStandard value LVCMOS33.. ]", 14, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-64] Illegal IOStandard configured for port 'TMDS_Tx_Clk_N'. I/O port 'TMDS_Tx_Clk_N' is differential, but has single-ended IOStandard value LVCMOS33.. ]", 10, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-64] Illegal IOStandard configured for port 'TMDS_Tx_Clk_N'. I/O port 'TMDS_Tx_Clk_N' is differential, but has single-ended IOStandard value LVCMOS33.. ]", 10, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-64] Illegal IOStandard configured for port 'TMDS_Tx_Clk_N'. I/O port 'TMDS_Tx_Clk_N' is differential, but has single-ended IOStandard value LVCMOS33.. , [Place 30-64] Illegal IOStandard configured for port 'TMDS_Tx_Data_N[2]'. I/O port 'TMDS_Tx_Data_N[2]' is differential, but has single-ended IOStandard value LVCMOS33.. ]", 14, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectCodeEditor("system.xdc", 310, 235); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectCodeEditor("system.xdc", 329, 141); // ce (w, ck)
+selectCodeEditor("system.xdc", 0, 67); // ce (w, ck)
+selectCodeEditor("system.xdc", 128, 185); // ce (w, ck)
+selectCodeEditor("system.xdc", 0, 89); // ce (w, ck)
+typeControlKey((HResource) null, "system.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("system.xdc", 485, 160); // ce (w, ck)
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 167, 239); // ce (w, ck)
+selectCodeEditor("system.xdc", 167, 239, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("system.xdc", 214, 118); // ce (w, ck)
+selectCodeEditor("system.xdc", 214, 118, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 303, 242); // ce (w, ck)
+selectCodeEditor("system.xdc", 303, 242, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("system.xdc", 434, 125); // ce (w, ck)
+selectCodeEditor("system.xdc", 434, 125, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 166, 258); // ce (w, ck)
+selectCodeEditor("system.xdc", 166, 258, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("system.xdc", 214, 145); // ce (w, ck)
+selectCodeEditor("system.xdc", 214, 145, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 289, 260); // ce (w, ck)
+selectCodeEditor("system.xdc", 289, 260, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("system.xdc", 452, 138); // ce (w, ck)
+selectCodeEditor("system.xdc", 452, 138, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 174, 272); // ce (w, ck)
+selectCodeEditor("system.xdc", 174, 272, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("system.xdc", 217, 156); // ce (w, ck)
+selectCodeEditor("system.xdc", 217, 156, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 291, 278); // ce (w, ck)
+selectCodeEditor("system.xdc", 291, 278, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("system.xdc", 442, 165); // ce (w, ck)
+selectCodeEditor("system.xdc", 442, 165, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 172, 293); // ce (w, ck)
+selectCodeEditor("system.xdc", 172, 293, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("system.xdc", 218, 184); // ce (w, ck)
+selectCodeEditor("system.xdc", 218, 184, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 308, 298); // ce (w, ck)
+selectCodeEditor("system.xdc", 308, 298, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("system.xdc", 448, 181); // ce (w, ck)
+selectCodeEditor("system.xdc", 448, 181, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 172, 311); // ce (w, ck)
+selectCodeEditor("system.xdc", 172, 311, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("system.xdc", 215, 197); // ce (w, ck)
+selectCodeEditor("system.xdc", 215, 197, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 297, 312); // ce (w, ck)
+selectCodeEditor("system.xdc", 297, 312, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("system.xdc", 452, 196); // ce (w, ck)
+selectCodeEditor("system.xdc", 452, 196, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 175, 334); // ce (w, ck)
+selectCodeEditor("system.xdc", 175, 334, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("system.xdc", 214, 213); // ce (w, ck)
+selectCodeEditor("system.xdc", 214, 213, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 314, 325); // ce (w, ck)
+selectCodeEditor("system.xdc", 316, 329); // ce (w, ck)
+selectCodeEditor("system.xdc", 316, 329, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("system.xdc", 454, 216); // ce (w, ck)
+selectCodeEditor("system.xdc", 454, 216, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 374, 274); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer stopped due to earlier errors. Implementation Feasibility check failed, Please see the previously displayed individual error or warning messages for more details.'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 18, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer stopped due to earlier errors. Implementation Feasibility check failed, Please see the previously displayed individual error or warning messages for more details.'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 18, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer stopped due to earlier errors. Implementation Feasibility check failed, Please see the previously displayed individual error or warning messages for more details.'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 18, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Nov  2 22:54:22 2020] Launched synth_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/runme.log [Mon Nov  2 22:54:22 2020] Launched impl_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 222ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 475 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-58] IO placement is infeasible. Number of unplaced terminals (8) is greater than number of available sites (0).. The following are banks with available pins: .  IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 8 sites.. 	Term: i_data_spi[0]. 	Term:  i_data_spi[1]. 	Term:  i_data_spi[2]. 	Term:  i_data_spi[3]. 	Term:  i_data_spi[4]. 	Term:  i_data_spi[5]. 	Term:  i_data_spi[6]. 	Term:  and i_data_spi[7]. . . ]", 5, true); // ah (O, ck) - Node
+// Elapsed time: 16 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-58] IO placement is infeasible. Number of unplaced terminals (8) is greater than number of available sites (0).. The following are banks with available pins: .  IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 8 sites.. 	Term: i_data_spi[0]. 	Term:  i_data_spi[1]. 	Term:  i_data_spi[2]. 	Term:  i_data_spi[3]. 	Term:  i_data_spi[4]. 	Term:  i_data_spi[5]. 	Term:  i_data_spi[6]. 	Term:  and i_data_spi[7]. . . ]", 5, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-58] IO placement is infeasible. Number of unplaced terminals (8) is greater than number of available sites (0).. The following are banks with available pins: .  IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 8 sites.. 	Term: i_data_spi[0]. 	Term:  i_data_spi[1]. 	Term:  i_data_spi[2]. 	Term:  i_data_spi[3]. 	Term:  i_data_spi[4]. 	Term:  i_data_spi[5]. 	Term:  i_data_spi[6]. 	Term:  and i_data_spi[7]. . . ]", 5, true, false, false, false, false, true); // ah (O, ck) - Double Click - Node
+selectCodeEditor("system.xdc", 210, 215); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "QSPI_slave_tp.v", 2); // k (j, ck)
+selectCodeEditor("QSPI_slave_tp.v", 328, 178); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("QSPI_slave_tp.v", 98, 214); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 98, 214, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "system.xdc", 5); // k (j, ck)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("top_128.v", 74, 159); // ce (w, ck)
+selectCodeEditor("top_128.v", 38, 168); // ce (w, ck)
+selectCodeEditor("top_128.v", 38, 168, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("top_128.v", 63, 168); // ce (w, ck)
+selectCodeEditor("top_128.v", 14, 66); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 41, 62); // ce (w, ck)
+selectCodeEditor("top_128.v", 269, 62); // ce (w, ck)
+selectCodeEditor("top_128.v", 119, 100); // ce (w, ck)
+// [GUI Memory]: 123 MB (+3470kb) [00:39:57]
+selectCodeEditor("top_128.v", 177, 40); // ce (w, ck)
+selectCodeEditor("top_128.v", 184, 44); // ce (w, ck)
+selectCodeEditor("top_128.v", 184, 44, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 361, 69); // ce (w, ck)
+selectCodeEditor("top_128.v", 358, 93); // ce (w, ck)
+selectCodeEditor("top_128.v", 3, 102); // ce (w, ck)
+selectCodeEditor("top_128.v", 173, 98); // ce (w, ck)
+selectCodeEditor("top_128.v", 194, 71); // ce (w, ck)
+selectCodeEditor("top_128.v", 194, 71, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 29 seconds
+selectCodeEditor("top_128.v", 73, 213); // ce (w, ck)
+selectCodeEditor("top_128.v", 74, 201); // ce (w, ck)
+selectCodeEditor("top_128.v", 74, 201, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("top_128.v", 79, 27); // ce (w, ck)
+selectCodeEditor("top_128.v", 29, 198); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("top_128.v", 33, 256); // ce (w, ck)
+selectCodeEditor("top_128.v", 190, 252); // ce (w, ck)
+selectCodeEditor("top_128.v", 166, 255); // ce (w, ck)
+selectCodeEditor("top_128.v", 202, 274); // ce (w, ck)
+selectCodeEditor("top_128.v", 52, 277); // ce (w, ck)
+selectCodeEditor("top_128.v", 108, 87); // ce (w, ck)
+selectCodeEditor("top_128.v", 43, 129); // ce (w, ck)
+// Elapsed time: 72 seconds
+selectCodeEditor("top_128.v", 42, 258); // ce (w, ck)
+selectCodeEditor("top_128.v", 42, 258, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 70, 308); // ce (w, ck)
+selectCodeEditor("top_128.v", 70, 308, false, false, false, false, true); // ce (w, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 977 MB. GUI used memory: 65 MB. Current time: 11/2/20 11:07:10 PM CST
+// Elapsed time: 31 seconds
+selectCodeEditor("top_128.v", 51, 179); // ce (w, ck)
+// Elapsed time: 235 seconds
+selectCodeEditor("top_128.v", 64, 119); // ce (w, ck)
+selectCodeEditor("top_128.v", 64, 119, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 85, 100); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 135, 108); // ce (w, ck)
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), fir_instance : FIR_128 (FIR_128.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), fir_instance : FIR_128 (FIR_128.v)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("FIR_128.v", 100, 202); // ce (w, ck)
+typeControlKey((HResource) null, "FIR_128.v", 'c'); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("top_128.v", 76, 200); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 210, 195); // ce (w, ck)
+// Elapsed time: 127 seconds
+selectCodeEditor("top_128.v", 106, 139); // ce (w, ck)
+// Elapsed time: 35 seconds
+selectCodeEditor("top_128.v", 117, 214); // ce (w, ck)
+// Elapsed time: 57 seconds
+selectCodeEditor("top_128.v", 86, 249); // ce (w, ck)
+selectCodeEditor("top_128.v", 71, 236); // ce (w, ck)
+// Elapsed time: 40 seconds
+selectCodeEditor("top_128.v", 76, 235); // ce (w, ck)
+selectCodeEditor("top_128.v", 41, 255); // ce (w, ck)
+selectCodeEditor("top_128.v", 32, 255); // ce (w, ck)
+selectCodeEditor("top_128.v", 238, 182); // ce (w, ck)
+selectCodeEditor("top_128.v", 238, 182, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 262, 181); // ce (w, ck)
+selectCodeEditor("top_128.v", 116, 181); // ce (w, ck)
+selectCodeEditor("top_128.v", 72, 207); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_128.v", 117, 160); // ce (w, ck)
+selectCodeEditor("top_128.v", 161, 143); // ce (w, ck)
+selectCodeEditor("top_128.v", 47, 137); // ce (w, ck)
+selectCodeEditor("top_128.v", 171, 141); // ce (w, ck)
+selectCodeEditor("top_128.v", 197, 158); // ce (w, ck)
+selectCodeEditor("top_128.v", 155, 175); // ce (w, ck)
+selectCodeEditor("top_128.v", 95, 139); // ce (w, ck)
+selectCodeEditor("top_128.v", 205, 145); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 15, 162); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 5, 161); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_128.v", 326, 193); // ce (w, ck)
+selectCodeEditor("top_128.v", 125, 252); // ce (w, ck)
+selectCodeEditor("top_128.v", 125, 252); // ce (w, ck)
+selectCodeEditor("top_128.v", 125, 253); // ce (w, ck)
+selectCodeEditor("top_128.v", 125, 253, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 181, 126); // ce (w, ck)
+selectCodeEditor("top_128.v", 181, 126, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_128.v", 185, 118); // ce (w, ck)
+selectCodeEditor("top_128.v", 185, 118, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 134, 263); // ce (w, ck)
+selectCodeEditor("top_128.v", 134, 261, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 344, 215); // ce (w, ck)
+selectCodeEditor("top_128.v", 303, 154); // ce (w, ck)
+selectCodeEditor("top_128.v", 276, 104); // ce (w, ck)
+selectCodeEditor("top_128.v", 319, 127); // ce (w, ck)
+selectCodeEditor("top_128.v", 147, 124); // ce (w, ck)
+selectCodeEditor("top_128.v", 155, 124); // ce (w, ck)
+selectCodeEditor("top_128.v", 150, 143); // ce (w, ck)
+selectCodeEditor("top_128.v", 154, 146); // ce (w, ck)
+selectCodeEditor("top_128.v", 157, 163); // ce (w, ck)
+selectCodeEditor("top_128.v", 286, 156); // ce (w, ck)
+selectCodeEditor("top_128.v", 91, 181); // ce (w, ck)
+selectCodeEditor("top_128.v", 307, 170); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("top_128.v", 322, 211); // ce (w, ck)
+selectCodeEditor("top_128.v", 45, 176); // ce (w, ck)
+selectCodeEditor("top_128.v", 186, 148); // ce (w, ck)
+selectCodeEditor("top_128.v", 185, 149, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 60, 185); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+// Elapsed time: 29 seconds
+selectCodeEditor("top_128.v", 99, 234); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("top_128.v", 186, 99); // ce (w, ck)
+selectCodeEditor("top_128.v", 186, 99, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 92, 231); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("top_128.v", 197, 131); // ce (w, ck)
+selectCodeEditor("top_128.v", 197, 131, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 198, 180); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 194, 50); // ce (w, ck)
+selectCodeEditor("top_128.v", 194, 50, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 234, 67); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 160, 161); // ce (w, ck)
+selectCodeEditor("top_128.v", 1, 146); // ce (w, ck)
+selectCodeEditor("top_128.v", 168, 143); // ce (w, ck)
+selectCodeEditor("top_128.v", 250, 116); // ce (w, ck)
+selectCodeEditor("top_128.v", 250, 116, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 78, 258); // ce (w, ck)
+selectCodeEditor("top_128.v", 78, 258, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 252, 213); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("top_128.v", 188, 170); // ce (w, ck)
+selectCodeEditor("top_128.v", 70, 157); // ce (w, ck)
+selectCodeEditor("top_128.v", 273, 166); // ce (w, ck)
+selectCodeEditor("top_128.v", 254, 113); // ce (w, ck)
+selectCodeEditor("top_128.v", 113, 169); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_128.v", 302, 143); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: [Mon Nov  2 23:21:07 2020] Launched synth_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/runme.log [Mon Nov  2 23:21:07 2020] Launched impl_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 258 seconds
+selectCheckBox(PAResourceItoN.MsgView_ERROR_MESSAGES, (String) null, false); // g (aQ, ck): FALSE
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, ck): FALSE
+selectCodeEditor("top_128.v", 9, 331); // ce (w, ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Implementation Completed: addNotify
+// Elapsed time: 144 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Implementation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Mon Nov  2 23:27:55 2020] Launched impl_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 135 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 977 MB. GUI used memory: 62 MB. Current time: 11/3/20 12:18:31 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 977 MB. GUI used memory: 61 MB. Current time: 11/3/20 3:18:41 AM CST
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1180 ms. Increasing delay to 3000 ms.
+// WARNING: HTimer (WrapperUtils Delayed Delete Timer) is taking 793ms to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 977 MB. GUI used memory: 61 MB. Current time: 11/3/20 9:54:34 AM CST
+// Elapsed time: 37489 seconds
+selectCodeEditor("top_128.v", 765, 65); // ce (w, ck)
+// Elapsed time: 1300 seconds
+selectCodeEditor("top_128.v", 411, 178); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "QSPI_slave_tp.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "qspi_slave.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_128.v", 1); // k (j, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("system.xdc", 3, 136); // ce (w, ck)
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 567, 255); // ce (w, ck)
+selectCodeEditor("system.xdc", 183, 183, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("system.xdc", 309, 177); // ce (w, ck)
+selectCodeEditor("system.xdc", 289, 0); // ce (w, ck)
+selectCodeEditor("system.xdc", 289, 35); // ce (w, ck)
+selectCodeEditor("system.xdc", 292, 50); // ce (w, ck)
+selectCodeEditor("system.xdc", 291, 66); // ce (w, ck)
+selectCodeEditor("system.xdc", 288, 85); // ce (w, ck)
+selectCodeEditor("system.xdc", 292, 109); // ce (w, ck)
+selectCodeEditor("system.xdc", 298, 121); // ce (w, ck)
+selectCodeEditor("system.xdc", 302, 141); // ce (w, ck)
+selectCodeEditor("system.xdc", 302, 160); // ce (w, ck)
+selectCodeEditor("system.xdc", 356, 137); // ce (w, ck)
+selectCodeEditor("system.xdc", 357, 153); // ce (w, ck)
+selectCodeEditor("system.xdc", 365, 188); // ce (w, ck)
+selectCodeEditor("system.xdc", 371, 206); // ce (w, ck)
+selectCodeEditor("system.xdc", 377, 221); // ce (w, ck)
+selectCodeEditor("system.xdc", 382, 238); // ce (w, ck)
+selectCodeEditor("system.xdc", 387, 255); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov  3 10:18:08 2020] Launched synth_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/runme.log [Tue Nov  3 10:18:08 2020] Launched impl_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 221 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+// Elapsed time: 116 seconds
+selectCodeEditor("system.xdc", 210, 51); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 977 MB. GUI used memory: 58 MB. Current time: 11/3/20 10:24:31 AM CST
+// Elapsed time: 194 seconds
+selectCodeEditor("system.xdc", 270, 232); // ce (w, ck)
+selectCodeEditor("system.xdc", 21, 148); // ce (w, ck)
+selectCodeEditor("system.xdc", 15, 184); // ce (w, ck)
+selectCodeEditor("system.xdc", 0, 146); // ce (w, ck)
+selectCodeEditor("system.xdc", 104, 203, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("system.xdc", 202, 283); // ce (w, ck)
+selectCodeEditor("system.xdc", 9, 199); // ce (w, ck)
+selectCodeEditor("system.xdc", 4, 217); // ce (w, ck)
+selectCodeEditor("system.xdc", 5, 239); // ce (w, ck)
+selectCodeEditor("system.xdc", 5, 255); // ce (w, ck)
+selectCodeEditor("system.xdc", 7, 272); // ce (w, ck)
+selectCodeEditor("system.xdc", 7, 298); // ce (w, ck)
+selectCodeEditor("system.xdc", 5, 309); // ce (w, ck)
+selectCodeEditor("system.xdc", 90, 331); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Nov  3 10:27:25 2020] Launched synth_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/runme.log [Tue Nov  3 10:27:25 2020] Launched impl_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 253 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// Elapsed time: 407 seconds
+selectCodeEditor("system.xdc", 593, 62); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("top_128.v", 175, 107); // ce (w, ck)
+selectCodeEditor("top_128.v", 175, 107, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 182, 109); // ce (w, ck)
+selectCodeEditor("top_128.v", 184, 109, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 195, 107); // ce (w, ck)
+selectCodeEditor("top_128.v", 195, 107, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 185, 50); // ce (w, ck)
+selectCodeEditor("top_128.v", 185, 50, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 14, 168); // ce (w, ck)
+selectCodeEditor("top_128.v", 14, 168, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 53, 158); // ce (w, ck)
+selectCodeEditor("top_128.v", 53, 158, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 11, 164); // ce (w, ck)
+selectCodeEditor("top_128.v", 11, 164, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 45, 219); // ce (w, ck)
+selectCodeEditor("top_128.v", 45, 219, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 203, 119); // ce (w, ck)
+selectCodeEditor("top_128.v", 203, 119, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 203, 119); // ce (w, ck)
+selectCodeEditor("top_128.v", 285, 119); // ce (w, ck)
+selectCodeEditor("top_128.v", 193, 126); // ce (w, ck)
+selectCodeEditor("top_128.v", 201, 122); // ce (w, ck)
+selectCodeEditor("top_128.v", 201, 142); // ce (w, ck)
+selectCodeEditor("top_128.v", 201, 142, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 257, 154); // ce (w, ck)
+selectCodeEditor("top_128.v", 1, 200); // ce (w, ck)
+selectCodeEditor("top_128.v", 342, 219); // ce (w, ck)
+selectCodeEditor("top_128.v", 95, 201); // ce (w, ck)
+selectCodeEditor("top_128.v", 95, 201, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 154, 199); // ce (w, ck)
+selectCodeEditor("top_128.v", 154, 199, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 173, 225); // ce (w, ck)
+selectCodeEditor("top_128.v", 53, 198); // ce (w, ck)
+selectCodeEditor("top_128.v", 213, 201); // ce (w, ck)
+selectCodeEditor("top_128.v", 213, 201, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 55, 205); // ce (w, ck)
+selectCodeEditor("top_128.v", 55, 205, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 253, 202); // ce (w, ck)
+selectCodeEditor("top_128.v", 253, 202, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 277, 266); // ce (w, ck)
+selectCodeEditor("top_128.v", 285, 207); // ce (w, ck)
+selectCodeEditor("top_128.v", 285, 233); // ce (w, ck)
+selectCodeEditor("top_128.v", 204, 256); // ce (w, ck)
+selectCodeEditor("top_128.v", 204, 256, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 139, 105); // ce (w, ck)
+selectCodeEditor("top_128.v", 152, 168); // ce (w, ck)
+selectCodeEditor("top_128.v", 113, 300); // ce (w, ck)
+selectCodeEditor("top_128.v", 113, 300, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 259, 296); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("QSPI_slave_tp.v", 133, 195); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 182, 208); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 160, 207); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 103, 207); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 103, 207, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_128.v", 1); // k (j, ck)
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "QSPI_slave_tp.v", 2); // k (j, ck)
+selectCodeEditor("QSPI_slave_tp.v", 102, 199); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 102, 199); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 102, 199); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 102, 199); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 128, 212); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 128, 212); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 128, 212); // ce (w, ck)
+// Elapsed time: 644 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), fir_instance : FIR_128 (FIR_128.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), fir_instance : FIR_128 (FIR_128.v)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 25 seconds
+selectCodeEditor("FIR_128.v", 93, 102); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("FIR_128.v", 175, 82); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 101, 67); // ce (w, ck)
+typeControlKey((HResource) null, "FIR_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 136, 125); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 136, 125, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "FIR_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 236, 118); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 236, 118, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_128.v", 238, 125); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 238, 125, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "FIR_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 327, 167); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 7, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 7, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 10 seconds
+selectCodeEditor("QSPI_slave_tp.v", 19, 119); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 227, 136); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 59, 295); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 59, 286); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 71, 280); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("QSPI_slave_tp.v", 144, 126); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 144, 126, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 144, 126); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 144, 126); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 144, 126); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 268, 208); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 142, 119); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 142, 119, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'c'); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 110, 351); // ce (w, ck)
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'v'); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 111, 351); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 95, 140); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 95, 140, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 95, 140); // ce (w, ck)
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'c'); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 977 MB. GUI used memory: 58 MB. Current time: 11/3/20 10:54:31 AM CST
+// Elapsed time: 38 seconds
+selectCodeEditor("QSPI_slave_tp.v", 41, 310); // ce (w, ck)
+// Elapsed time: 39 seconds
+selectCodeEditor("QSPI_slave_tp.v", 81, 313); // ce (w, ck)
+// Elapsed time: 25 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 7); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 7); // B (D, ck)
+selectCodeEditor("QSPI_slave_tp.v", 45, 324); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 45, 310); // ce (w, ck)
+// Elapsed time: 29 seconds
+selectCodeEditor("QSPI_slave_tp.v", 76, 144); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 76, 144); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 125, 144); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 125, 144, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 187, 190); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectCodeEditor("QSPI_slave_tp.v", 75, 69); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 75, 69, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 131, 71); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 62, 72); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 62, 72, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 140, 63); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 58, 63); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 54, 70); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 172, 54); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 153, 67); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 153, 67); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 153, 67, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 110, 62); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 33, 68); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 33, 85); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 91, 47); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 91, 47, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'c'); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 22, 197); // ce (w, ck)
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'v'); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 1, 200); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 136, 208); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 81, 184); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 80, 183, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 113, 137); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("QSPI_slave_tp.v", 223, 139); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 85, 51); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 85, 51, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 78, 221); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 207, 269); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 72, 222); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 124, 219); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 124, 219, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 141, 192); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 141, 192, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 12, 144); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 244, 213); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 97, 217); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 97, 217, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'c'); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 41, 263); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 41, 263, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'v'); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 77, 258); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 103, 249); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 135, 82); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 135, 83, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'c'); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 111, 256); // ce (w, ck)
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'v'); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 182, 320); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 166, 255); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 458, 221); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 43, 161); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 375, 178); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 7, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 7, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("QSPI_slave_tp.v", 139, 216); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 139, 216, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'c'); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("top_128.v", 56, 302); // ce (w, ck)
+selectCodeEditor("top_128.v", 56, 301, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 392, 287); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("QSPI_slave_tp.v", 83, 155); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 86, 159); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 86, 159, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 102, 180); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 102, 180, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 5, 111); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 50, 129); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 117, 120); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 110, 165); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 23, 149); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 29, 170); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 25, 143); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 94, 160); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 116, 140); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 116, 140, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 50, 138); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 50, 138, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 121, 138); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 121, 138, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 10 seconds
+selectCodeEditor("top_128.v", 69, 180); // ce (w, ck)
+selectCodeEditor("top_128.v", 69, 180, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 200, 144); // ce (w, ck)
+selectCodeEditor("top_128.v", 200, 144, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 62, 294); // ce (w, ck)
+selectCodeEditor("top_128.v", 62, 294, false, false, false, false, true); // ce (w, ck) - Double Click
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (ck): Synthesis is Out-of-date: addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+dismissDialog("Resetting Runs"); // bx (ck)
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov  3 11:01:09 2020] Launched synth_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/runme.log [Tue Nov  3 11:01:09 2020] Launched impl_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 309 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+// aI (ck): Feedback Request: addNotify
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceTtoZ.TouchpointSurveyDialog_NO, "No"); // a (aI)
+dismissDialog("Feedback Request"); // aI (ck)
+selectButton("PAResourceTtoZ.TouchpointSurveyDialog_USE_TOOLS_OPTIONS_WINDOWS_BEHAVIOR_OK", "OK"); // JButton (A, G)
+// [GUI Memory]: 132 MB (+2605kb) [12:42:48]
+// Elapsed time: 71 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("QSPI_slave_tp.v", 39, 191); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 39, 191, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 86, 192); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 87, 192, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 94, 196); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 94, 196, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 452 seconds
+selectCodeEditor("QSPI_slave_tp.v", 93, 180); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 93, 179, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 131, 182); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 131, 182, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 50, 313); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 50, 313, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'c'); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 128, 127); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 128, 127, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'v'); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 237, 129); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 118, 232); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov  3 11:15:59 2020] Launched synth_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/runme.log [Tue Nov  3 11:15:59 2020] Launched impl_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("QSPI_slave_tp.v", 49, 198); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 186, 214); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+selectCodeEditor("QSPI_slave_tp.v", 55, 195); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, ck) - Node
+// [GUI Memory]: 139 MB (+554kb) [12:52:34]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), fir_instance : FIR_128 (FIR_128.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), fir_instance : FIR_128 (FIR_128.v)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("FIR_128.v", 83, 255); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 177, 264); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 99, 255); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 99, 255, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_128.v", 164, 136); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 274, 287); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("FIR_128.v", 187, 100); // ce (w, ck)
+// [GUI Memory]: 154 MB (+8334kb) [12:53:12]
+selectCodeEditor("FIR_128.v", 269, 188); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 189, 105); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 135, 219); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("FIR_128.v", 162, 103); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("FIR_128.v", 86, 236); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("FIR_128.v", 10, 175); // ce (w, ck)
+typeControlKey((HResource) null, "FIR_128.v", 'v'); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("FIR_128.v", 46, 181); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 60, 238); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 51, 238); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 51, 238, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_128.v", 137, 108); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 127, 104); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 127, 104, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_128.v", 54, 240); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 54, 240, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 10, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("system.xdc", 282, 178); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("top_128.v", 11, 256); // ce (w, ck)
+selectCodeEditor("top_128.v", 11, 256, false, false, false, false, true); // ce (w, ck) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), fir_instance : FIR_128 (FIR_128.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), fir_instance : FIR_128 (FIR_128.v)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("FIR_128.v", 135, 139); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 123, 30); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 123, 30, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FIR_128.v", 126, 30); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 126, 30, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "FIR_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 80, 222); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 46, 159); // ce (w, ck)
+typeControlKey((HResource) null, "FIR_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 99, 219); // ce (w, ck)
+typeControlKey((HResource) null, "FIR_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 80, 219); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 274, 217); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 79, 222); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 278, 217); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 72, 215); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 307, 216); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("FIR_128.v", 237, 259); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 75, 192); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 245, 209); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 82, 196); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 306, 316); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 144, 200); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 279, 277); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 144, 85); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 169, 80); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 213, 84); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 156, 87); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 343, 171); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 147, 141); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 119, 142); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 248, 161); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 296, 256); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 142, 146); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 228, 186); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 128, 207); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 100, 153); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 175, 141); // ce (w, ck)
+// [GUI Memory]: 164 MB (+3096kb) [12:56:36]
+selectCodeEditor("FIR_128.v", 253, 282); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 91, 266); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 328, 216); // ce (w, ck)
+selectCodeEditor("FIR_128.v", 175, 237); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("QSPI_slave_tp.v", 172, 259); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 40, 240); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 54, 258); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 153, 263); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 52, 198); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 52, 198, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 163, 306); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 164, 295); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 189, 293); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 187, 201); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 119, 179); // ce (w, ck)
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'v'); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 41, 223); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 41, 223, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 104, 335); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 104, 335, false, false, false, false, true); // ce (w, ck) - Double Click
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 977 MB. GUI used memory: 58 MB. Current time: 11/3/20 11:24:36 AM CST
+// Elapsed time: 355 seconds
+selectCodeEditor("QSPI_slave_tp.v", 182, 278); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCheckBox(PAResourceItoN.MsgView_ERROR_MESSAGES, (String) null, false); // g (aQ, ck): FALSE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aQ, ck): TRUE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aQ, ck): FALSE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (ck): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+dismissDialog("Resetting Runs"); // bx (ck)
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov  3 11:28:07 2020] Launched synth_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/runme.log [Tue Nov  3 11:28:08 2020] Launched impl_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 464 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.. 	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets I_qspi_cs_IBUF] >. . 	I_qspi_cs_IBUF_inst (IBUF.O) is locked to IOB_X0Y20. 	 and I_qspi_cs_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y2. ]", 5, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.. 	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets I_qspi_cs_IBUF] >. . 	I_qspi_cs_IBUF_inst (IBUF.O) is locked to IOB_X0Y20. 	 and I_qspi_cs_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y2. ]", 5, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.. 	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets I_qspi_cs_IBUF] >. . 	I_qspi_cs_IBUF_inst (IBUF.O) is locked to IOB_X0Y20. 	 and I_qspi_cs_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y2. ]", 5, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer failed'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 6, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer failed'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 6, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Common 17-69] Command failed: Placer could not place all instances. ]", 7, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Common 17-69] Command failed: Placer could not place all instances. ]", 7, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer failed'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 6, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer failed'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 6, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunRun_TASK_HAS_ALREADY_COMPLETED_AND_UP_TO_DATE_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bx)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. INFO: [Common 17-344] 'reset_run' was cancelled 
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// 'k' command handler elapsed time: 4 seconds
+dismissDialog("Resetting Runs"); // bx (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("top_128.v", 318, 295); // ce (w, ck)
+selectCodeEditor("top_128.v", 318, 295, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 278, 163); // ce (w, ck)
+selectCodeEditor("top_128.v", 278, 163, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 301, 157); // ce (w, ck)
+selectCodeEditor("top_128.v", 301, 157, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCheckBox(PAResourceItoN.MsgView_ERROR_MESSAGES, (String) null, false); // g (aQ, ck): FALSE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g (aQ, ck): TRUE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (ck):  Resetting Runs : addNotify
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Tue Nov  3 11:36:44 2020] Launched synth_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// Elapsed time: 84 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [IP_Flow 19-2248] Failed to load user IP repository 'f:/vivado_workspace/PLD_filter_128/IP_Core/Frequency-Divider-IP'; Can't find the specified path.. If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.. ]", 3, true); // ah (O, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("system.xdc", 504, 200); // ce (w, ck)
+selectCodeEditor("system.xdc", 336, 84); // ce (w, ck)
+// Elapsed time: 85 seconds
+selectCodeEditor("system.xdc", 199, 56); // ce (w, ck)
+selectCodeEditor("system.xdc", 281, 283); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("system.xdc", 117, 98); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1373ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 85 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bx (ck):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 8 
+// Tcl Message: [Tue Nov  3 11:41:26 2020] Launched impl_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 115 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.. 	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets I_qspi_cs_IBUF] >. . 	I_qspi_cs_IBUF_inst (IBUF.O) is locked to IOB_X0Y20. 	 and I_qspi_cs_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y2. ]", 5, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer failed'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 6, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer failed'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 6, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer failed'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 6, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer failed'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 6, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer failed'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 6, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer failed'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 6, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Common 17-69] Command failed: Placer could not place all instances. ]", 7, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Common 17-69] Command failed: Placer could not place all instances. ]", 7, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.. 	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets I_qspi_cs_IBUF] >. . 	I_qspi_cs_IBUF_inst (IBUF.O) is locked to IOB_X0Y20. 	 and I_qspi_cs_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y2. ]", 5, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.. 	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets I_qspi_cs_IBUF] >. . 	I_qspi_cs_IBUF_inst (IBUF.O) is locked to IOB_X0Y20. 	 and I_qspi_cs_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y2. ]", 5, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.. 	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets I_qspi_cs_IBUF] >. . 	I_qspi_cs_IBUF_inst (IBUF.O) is locked to IOB_X0Y20. 	 and I_qspi_cs_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y2. ]", 5, false); // ah (O, ck)
+// Elapsed time: 34 seconds
+selectCodeEditor("system.xdc", 346, 185); // ce (w, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.. 	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets I_qspi_cs_IBUF] >. . 	I_qspi_cs_IBUF_inst (IBUF.O) is locked to IOB_X0Y20. 	 and I_qspi_cs_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y2. ]", 5, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.. 	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets I_qspi_cs_IBUF] >. . 	I_qspi_cs_IBUF_inst (IBUF.O) is locked to IOB_X0Y20. 	 and I_qspi_cs_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y2. ]", 5, false, false, false, false, true, false); // ah (O, ck) - Popup Trigger
+selectCodeEditor("system.xdc", 39, 142); // ce (w, ck)
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("system.xdc", 33, 163); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("system.xdc", 4, 167); // ce (w, ck)
+selectCodeEditor("system.xdc", 456, 192); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Nov  3 11:45:07 2020] Launched synth_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/runme.log [Tue Nov  3 11:45:07 2020] Launched impl_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 12 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+selectCodeEditor("system.xdc", 295, 65); // ce (w, ck)
+dismissDialog("Resetting Runs"); // bx (ck)
+selectCodeEditor("system.xdc", 450, 63); // ce (w, ck)
+typeControlKey((HResource) null, "system.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("system.xdc", 381, 183); // ce (w, ck)
+typeControlKey((HResource) null, "system.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("system.xdc", 336, 195); // ce (w, ck)
+selectCodeEditor("system.xdc", 570, 195); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov  3 11:45:43 2020] Launched synth_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/runme.log [Tue Nov  3 11:45:43 2020] Launched impl_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 484 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 977 MB. GUI used memory: 58 MB. Current time: 11/3/20 11:54:36 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 977 MB. GUI used memory: 57 MB. Current time: 11/3/20 12:24:36 PM CST
+// Elapsed time: 3074 seconds
+selectCodeEditor("system.xdc", 143, 257); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("top_128.v", 223, 202); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+selectCodeEditor("QSPI_slave_tp.v", 273, 239); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 65, 107); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 65, 107, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 116, 104); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 116, 104, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 112 seconds
+selectCodeEditor("QSPI_slave_tp.v", 40, 203); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 40, 203, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'c'); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 131, 201); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 131, 201, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'v'); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 267, 202); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 168, 196); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 141, 209); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("QSPI_slave_tp.v", 129, 119); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 61, 124); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 61, 124, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("QSPI_slave_tp.v", 125, 111); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 60, 126); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 81, 121); // ce (w, ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("QSPI_slave_tp.v", 422, 60); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("QSPI_slave_tp.v", 209, 185); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 68, 117); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("QSPI_slave_tp.v", 74, 113); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 65, 122); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 65, 122, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 65, 119); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 313, 135); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 58, 128); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 68, 125); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("QSPI_slave_tp.v", 342, 85); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 213, 193); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 977 MB. GUI used memory: 57 MB. Current time: 11/3/20 12:54:36 PM CST
+// Elapsed time: 589 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("top_128.v", 300, 141); // ce (w, ck)
+selectCodeEditor("top_128.v", 320, 148); // ce (w, ck)
+// Elapsed time: 43 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("QSPI_slave_tp.v", 42, 200); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 42, 200, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 95, 85); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 95, 85, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 4, 161); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 133, 197); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("QSPI_slave_tp.v", 97, 236); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 97, 236, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'c'); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 136, 201); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 136, 201, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "QSPI_slave_tp.v", 'v'); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 232, 208); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 233, 203); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 2, 292); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 365, 266); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 315, 218); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("top_128.v", 57, 257); // ce (w, ck)
+selectCodeEditor("top_128.v", 265, 297); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1); // B (D, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "QSPI_slave_tp.v", 2); // k (j, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_128.v", 1); // k (j, ck)
+selectCodeEditor("top_128.v", 135, 216); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_128.v", 185, 195); // ce (w, ck)
+selectCodeEditor("top_128.v", 117, 263); // ce (w, ck)
+selectCodeEditor("top_128.v", 117, 263, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 109, 181); // ce (w, ck)
+selectCodeEditor("top_128.v", 67, 225); // ce (w, ck)
+selectCodeEditor("top_128.v", 50, 225); // ce (w, ck)
+selectCodeEditor("top_128.v", 50, 225, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 88, 222); // ce (w, ck)
+selectCodeEditor("top_128.v", 88, 222, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 142, 215); // ce (w, ck)
+selectCodeEditor("top_128.v", 142, 215, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 127, 220); // ce (w, ck)
+selectCodeEditor("top_128.v", 127, 220, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 124, 220); // ce (w, ck)
+selectCodeEditor("top_128.v", 132, 235); // ce (w, ck)
+selectCodeEditor("top_128.v", 127, 214); // ce (w, ck)
+selectCodeEditor("top_128.v", 134, 212); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("top_128.v", 205, 209); // ce (w, ck)
+selectCodeEditor("top_128.v", 205, 209, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 201, 220); // ce (w, ck)
+selectCodeEditor("top_128.v", 202, 220); // ce (w, ck)
+selectCodeEditor("top_128.v", 202, 220, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 202, 220); // ce (w, ck)
+selectCodeEditor("top_128.v", 202, 220); // ce (w, ck)
+selectCodeEditor("top_128.v", 202, 220); // ce (w, ck)
+selectCodeEditor("top_128.v", 213, 301); // ce (w, ck)
+selectCodeEditor("top_128.v", 201, 202); // ce (w, ck)
+selectCodeEditor("top_128.v", 201, 227); // ce (w, ck)
+selectCodeEditor("top_128.v", 238, 221); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov  3 13:02:24 2020] Launched synth_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/runme.log [Tue Nov  3 13:02:24 2020] Launched impl_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 118 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 9, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 11, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("system.xdc", 453, 79); // ce (w, ck)
+selectCodeEditor("system.xdc", 4, 104); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Nov  3 13:05:07 2020] Launched synth_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/runme.log [Tue Nov  3 13:05:07 2020] Launched impl_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("top_128.v", 56, 139); // ce (w, ck)
+selectCodeEditor("top_128.v", 56, 139, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), fir_instance : FIR_128 (FIR_128.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), fir_instance : FIR_128 (FIR_128.v)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 10 seconds
+selectCodeEditor("top_128.v", 56, 142); // ce (w, ck)
+selectCodeEditor("top_128.v", 56, 142, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 82 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'i_data' should not be used in output port connection [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/QSPI_slave_tp.v:44]. ]", 2, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\vivado_workspace\PLD_filter_128\PLD_filter_128\PLD_filter_128.srcs\sources_1\new\QSPI_slave_tp.v;-;;-;16;-;line;-;44;-;;-;16;-;"); // ah (O, ck)
+selectCodeEditor("QSPI_slave_tp.v", 222, 200); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 91, 201); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 91, 201, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 12, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, system.xdc]", 12, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-6156] failed synthesizing module 'QSPI_slave_tp' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/QSPI_slave_tp.v:3]. ]", 3, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\vivado_workspace\PLD_filter_128\PLD_filter_128\PLD_filter_128.srcs\sources_1\new\QSPI_slave_tp.v;-;;-;16;-;line;-;3;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'i_data' should not be used in output port connection [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/QSPI_slave_tp.v:44]. ]", 2, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\vivado_workspace\PLD_filter_128\PLD_filter_128\PLD_filter_128.srcs\sources_1\new\QSPI_slave_tp.v;-;;-;16;-;line;-;44;-;;-;16;-;"); // ah (O, ck)
+selectCodeEditor("QSPI_slave_tp.v", 81, 197); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 81, 197, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 61, 161); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 166, 166); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("QSPI_slave_tp.v", 72, 102); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("QSPI_slave_tp.v", 296, 113); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 135, 101); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 135, 101, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'i_data' should not be used in output port connection [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/QSPI_slave_tp.v:44]. ]", 2, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'i_data' should not be used in output port connection [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/QSPI_slave_tp.v:44]. ]", 2, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\vivado_workspace\PLD_filter_128\PLD_filter_128\PLD_filter_128.srcs\sources_1\new\QSPI_slave_tp.v;-;;-;16;-;line;-;44;-;;-;16;-;"); // ah (O, ck)
+selectCodeEditor("QSPI_slave_tp.v", 83, 201); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 91, 194); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 91, 194, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 234, 192); // ce (w, ck)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // i (N, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, blk_mem_gen_0]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, blk_mem_gen_0, Instantiation Template]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, blk_mem_gen_0, Instantiation Template, blk_mem_gen_0.veo]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, blk_mem_gen_0, Instantiation Template, blk_mem_gen_0.veo]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("blk_mem_gen_0.veo", 28, 122); // D (w, ck)
+selectCodeEditor("blk_mem_gen_0.veo", 440, 120); // D (w, ck)
+// PAPropertyPanels.initPanels (blk_mem_gen_0.xci) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, blk_mem_gen_0]", 1, true); // B (D, ck) - Node
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // i (N, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 7, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 7, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'i_data' should not be used in output port connection [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/QSPI_slave_tp.v:44]. ]", 2, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\vivado_workspace\PLD_filter_128\PLD_filter_128\PLD_filter_128.srcs\sources_1\new\QSPI_slave_tp.v;-;;-;16;-;line;-;44;-;;-;16;-;"); // ah (O, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("QSPI_slave_tp.v", 84, 201); // ce (w, ck)
+selectCodeEditor("QSPI_slave_tp.v", 84, 201, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("QSPI_slave_tp.v", 68, 167); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Nov  3 13:09:55 2020] Launched synth_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/runme.log [Tue Nov  3 13:09:55 2020] Launched impl_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 252 seconds
+selectCheckBox(PAResourceItoN.MsgView_ERROR_MESSAGES, (String) null, false); // g (aQ, ck): FALSE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 220 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 977 MB. GUI used memory: 58 MB. Current time: 11/3/20 1:24:37 PM CST
+// Elapsed time: 662 seconds
+selectCodeEditor("QSPI_slave_tp.v", 251, 127); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (ck):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,005 MB. GUI used memory: 58 MB. Current time: 11/3/20 1:29:42 PM CST
+// [Engine Memory]: 1,039 MB (+57573kb) [15:05:32]
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,302 MB. GUI used memory: 58 MB. Current time: 11/3/20 1:29:51 PM CST
+// [Engine Memory]: 1,302 MB (+221106kb) [15:05:40]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 3.8s
+// [Engine Memory]: 1,368 MB (+1749kb) [15:05:46]
+// Device: addNotify
+// DeviceView Instantiated
+// PAPropertyPanels.initPanels (top_128.v) elapsed time: 0.2s
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1448 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Constraints 18-4398] Generator version for shapeDB does not match. shapeDB will be regenerated. INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1780.227 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 3.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1780.227 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 4 instances were transformed.   IOBUF => IOBUF (IBUF, OBUFT): 4 instances  
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:52 ; elapsed = 00:00:49 . Memory (MB): peak = 1835.500 ; gain = 619.105 
+// ExpRunCommands.openImplResults elapsed time: 50.9s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [Engine Memory]: 1,440 MB (+3044kb) [15:05:56]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,455 MB. GUI used memory: 103 MB. Current time: 11/3/20 1:30:11 PM CST
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dP' command handler elapsed time: 63 seconds
+// Elapsed time: 64 seconds
+dismissDialog("Open Implemented Design"); // bx (ck)
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 27, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (ck): Report Utilization: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+dismissDialog("Report Utilization"); // a (ck)
+// bx (ck):  Report Utilization : addNotify
+// Tcl Message: report_utilization -name utilization_1 
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,493 MB. GUI used memory: 121 MB. Current time: 11/3/20 1:30:38 PM CST
+// Tcl Message: report_utilization: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 1924.320 ; gain = 0.000 
+// Tcl Message: report_utilization: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 1924.320 ; gain = 0.000 
+dismissDialog("Report Utilization"); // bx (ck)
+// Elapsed time: 10 seconds
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Clocking, MMCME2_ADV]", 34, false); // k (O, ck)
+// PAPropertyPanels.initPanels (HDMI (HDMI_top)) elapsed time: 0.8s
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(MMCME2_ADV)", "HDMI (HDMI_top) ; 2", 1, "HDMI (HDMI_top)", 0, true); // H (O, ck) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic Distribution, Slice]", 9, true); // k (O, ck) - Node
+// PAPropertyPanels.initPanels (fir_instance (FIR_128)) elapsed time: 0.3s
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice)", "fir_instance (FIR_128) ; 1690", 1, "fir_instance (FIR_128)", 0, true); // H (O, ck) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice)", "QSPI (QSPI_slave_tp) ; 17", 5, "QSPI (QSPI_slave_tp)", 0, true); // H (O, ck) - Node
+// PAPropertyPanels.initPanels (HDMI (HDMI_top)) elapsed time: 0.2s
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice)", "HDMI (HDMI_top) ; 135", 2, "HDMI (HDMI_top)", 0, true); // H (O, ck) - Node
+// PAPropertyPanels.initPanels (uart (uart_top)) elapsed time: 0.2s
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice)", "uart (uart_top) ; 58", 3, "uart (uart_top)", 0, true); // H (O, ck) - Node
+collapseTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic Distribution]", 8); // k (O, ck)
+expandTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic Distribution]", 8); // k (O, ck)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Slice Logic Distribution, Slice]", 9, true); // k (O, ck) - Node
+// PAPropertyPanels.initPanels (fir_instance (FIR_128)) elapsed time: 0.2s
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice)", "fir_instance (FIR_128) ; 1690", 1, "fir_instance (FIR_128)", 0, true); // H (O, ck) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Slice)", "HDMI (HDMI_top) ; 135", 2, "HDMI (HDMI_top)", 0, true); // H (O, ck) - Node
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_128.v", 2); // k (j, ck)
+selectCodeEditor("top_128.v", 173, 318); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("top_128.v", 188, 162); // ce (w, ck)
+selectCodeEditor("top_128.v", 302, 80); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("top_128.v", 41, 87); // ce (w, ck)
+selectCodeEditor("top_128.v", 63, 127); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 26, 123); // ce (w, ck)
+selectCodeEditor("top_128.v", 3, 112); // ce (w, ck)
+selectCodeEditor("top_128.v", 14, 108); // ce (w, ck)
+selectCodeEditor("top_128.v", 14, 108, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 11, 130); // ce (w, ck)
+selectCodeEditor("top_128.v", 12, 129, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 14, 153); // ce (w, ck)
+selectCodeEditor("top_128.v", 14, 153, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 20, 146); // ce (w, ck)
+selectCodeEditor("top_128.v", 21, 146, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 266, 114); // ce (w, ck)
+selectCodeEditor("top_128.v", 205, 167); // ce (w, ck)
+selectCodeEditor("top_128.v", 211, 163); // ce (w, ck)
+selectCodeEditor("top_128.v", 211, 163, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("top_128.v", 3, 102); // ce (w, ck)
+selectCodeEditor("top_128.v", 3, 102, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 246, 166); // ce (w, ck)
+selectCodeEditor("top_128.v", 85, 164); // ce (w, ck)
+selectCodeEditor("top_128.v", 25, 183); // ce (w, ck)
+selectCodeEditor("top_128.v", 3, 181); // ce (w, ck)
+selectCodeEditor("top_128.v", 24, 185); // ce (w, ck)
+selectCodeEditor("top_128.v", 24, 103); // ce (w, ck)
+selectCodeEditor("top_128.v", 25, 107); // ce (w, ck)
+selectCodeEditor("top_128.v", 278, 111); // ce (w, ck)
+selectCodeEditor("top_128.v", 13, 106); // ce (w, ck)
+selectCodeEditor("top_128.v", 13, 106, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 18, 181); // ce (w, ck)
+selectCodeEditor("top_128.v", 12, 177); // ce (w, ck)
+selectCodeEditor("top_128.v", 242, 180); // ce (w, ck)
+selectCodeEditor("top_128.v", 54, 182); // ce (w, ck)
+selectCodeEditor("top_128.v", 60, 140); // ce (w, ck)
+selectCodeEditor("top_128.v", 70, 152); // ce (w, ck)
+selectCodeEditor("top_128.v", 89, 163); // ce (w, ck)
+selectCodeEditor("top_128.v", 64, 200); // ce (w, ck)
+selectCodeEditor("top_128.v", 64, 200, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 35, 180); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 108, 200); // ce (w, ck)
+selectCodeEditor("top_128.v", 108, 200, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 120, 200); // ce (w, ck)
+selectCodeEditor("top_128.v", 120, 199, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 91, 201); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 81, 173); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 158, 222); // ce (w, ck)
+selectCodeEditor("top_128.v", 157, 222, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 49, 188); // ce (w, ck)
+selectCodeEditor("top_128.v", 74, 202); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("top_128.v", 17, 124); // ce (w, ck)
+selectCodeEditor("top_128.v", 65, 161); // ce (w, ck)
+selectCodeEditor("top_128.v", 49, 141); // ce (w, ck)
+selectCodeEditor("top_128.v", 191, 196); // ce (w, ck)
+selectCodeEditor("top_128.v", 191, 196, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 74, 182); // ce (w, ck)
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 281, 201); // ce (w, ck)
+selectCodeEditor("top_128.v", 367, 192); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_128.v", 62, 161); // ce (w, ck)
+selectCodeEditor("top_128.v", 116, 182); // ce (w, ck)
+selectCodeEditor("top_128.v", 47, 160); // ce (w, ck)
+selectCodeEditor("top_128.v", 54, 163); // ce (w, ck)
+// Elapsed time: 98 seconds
+selectCodeEditor("top_128.v", 316, 169); // ce (w, ck)
+selectCodeEditor("top_128.v", 316, 169, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 315, 178); // ce (w, ck)
+selectCodeEditor("top_128.v", 315, 178, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'c'); // ce (w, ck)
+selectCodeEditor("top_128.v", 106, 333); // ce (w, ck)
+selectCodeEditor("top_128.v", 106, 333, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "top_128.v", 'v'); // ce (w, ck)
+selectCodeEditor("top_128.v", 220, 323); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top_128.v", 208, 190); // ce (w, ck)
+selectCodeEditor("top_128.v", 140, 163); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("top_128.v", 161, 162); // ce (w, ck)
+selectCodeEditor("top_128.v", 480, 197); // ce (w, ck)
+selectCodeEditor("top_128.v", 149, 157); // ce (w, ck)
+selectCodeEditor("top_128.v", 248, 187); // ce (w, ck)
+selectCodeEditor("top_128.v", 341, 195); // ce (w, ck)
+selectCodeEditor("top_128.v", 156, 268); // ce (w, ck)
+selectCodeEditor("top_128.v", 71, 222); // ce (w, ck)
+selectCodeEditor("top_128.v", 65, 185); // ce (w, ck)
+selectCodeEditor("top_128.v", 243, 220); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectCodeEditor("top_128.v", 47, 181); // ce (w, ck)
+selectCodeEditor("top_128.v", 47, 181, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 190, 218); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("top_128.v", 389, 275); // ce (w, ck)
+selectCodeEditor("top_128.v", 228, 281); // ce (w, ck)
+selectCodeEditor("top_128.v", 74, 218); // ce (w, ck)
+selectCodeEditor("top_128.v", 301, 183); // ce (w, ck)
+selectCodeEditor("top_128.v", 213, 94); // ce (w, ck)
+selectCodeEditor("top_128.v", 100, 123); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_LAUNCH
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// TclEventType: RUN_MODIFY
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: [Tue Nov  3 13:37:45 2020] Launched synth_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/runme.log [Tue Nov  3 13:37:45 2020] Launched impl_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// [GUI Memory]: 173 MB (+256kb) [15:14:10]
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 93 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'rx_data' should not be used in output port connection [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/top_128.v:83]. ]", 2, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\vivado_workspace\PLD_filter_128\PLD_filter_128\PLD_filter_128.srcs\sources_1\new\top_128.v;-;;-;16;-;line;-;83;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'rx_data' should not be used in output port connection [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/top_128.v:83]. ]", 2, false); // ah (O, ck)
+selectCodeEditor("top_128.v", 55, 202); // ce (w, ck)
+selectCodeEditor("top_128.v", 55, 202, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 83, 199); // ce (w, ck)
+selectCodeEditor("top_128.v", 83, 199, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 22, 222); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("top_128.v", 13, 234); // ce (w, ck)
+selectCodeEditor("top_128.v", 13, 234, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-6156] failed synthesizing module 'top_128' [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/top_128.v:22]. ]", 3, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\vivado_workspace\PLD_filter_128\PLD_filter_128\PLD_filter_128.srcs\sources_1\new\top_128.v;-;;-;16;-;line;-;22;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'rx_data' should not be used in output port connection [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/top_128.v:83]. ]", 2, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\vivado_workspace\PLD_filter_128\PLD_filter_128\PLD_filter_128.srcs\sources_1\new\top_128.v;-;;-;16;-;line;-;83;-;;-;16;-;"); // ah (O, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("top_128.v", 273, 173); // ce (w, ck)
+selectCodeEditor("top_128.v", 196, 222); // ce (w, ck)
+selectCodeEditor("top_128.v", 107, 252); // ce (w, ck)
+selectCodeEditor("top_128.v", 107, 252, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aE (Q, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 6, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), uart : uart_top (uart_top.v)]", 4, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), uart : uart_top (uart_top.v)]", 4, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 8, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 8, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v), QSPI : QSPI_slave_tp (QSPI_slave_tp.v)]", 8, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_128 (top_128.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-685] variable 'rx_data' should not be used in output port connection [F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.srcs/sources_1/new/top_128.v:83]. ]", 2, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;F:\vivado_workspace\PLD_filter_128\PLD_filter_128\PLD_filter_128.srcs\sources_1\new\top_128.v;-;;-;16;-;line;-;83;-;;-;16;-;"); // ah (O, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("top_128.v", 22, 190); // ce (w, ck)
+selectCodeEditor("top_128.v", 216, 176); // ce (w, ck)
+selectCodeEditor("top_128.v", 207, 179); // ce (w, ck)
+selectCodeEditor("top_128.v", 207, 179, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("top_128.v", 157, 212); // ce (w, ck)
+selectCodeEditor("top_128.v", 25, 165); // ce (w, ck)
+selectCodeEditor("top_128.v", 70, 196); // ce (w, ck)
+selectCodeEditor("top_128.v", 180, 160); // ce (w, ck)
+selectCodeEditor("top_128.v", 180, 160, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 204, 195); // ce (w, ck)
+selectCodeEditor("top_128.v", 201, 186); // ce (w, ck)
+selectCodeEditor("top_128.v", 201, 186, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("top_128.v", 21, 178); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Tue Nov  3 13:41:23 2020] Launched synth_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/synth_1/runme.log [Tue Nov  3 13:41:23 2020] Launched impl_1... Run output will be captured here: F:/vivado_workspace/PLD_filter_128/PLD_filter_128/PLD_filter_128.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("top_128.v", 47, 211); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,494 MB. GUI used memory: 124 MB. Current time: 11/3/20 3:49:55 PM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3776 ms. Increasing delay to 3000 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 7990 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// Elapsed time: 564 seconds
+selectCodeEditor("top_128.v", 290, 144); // ce (w, ck)
+selectCodeEditor("top_128.v", 139, 200); // ce (w, ck)

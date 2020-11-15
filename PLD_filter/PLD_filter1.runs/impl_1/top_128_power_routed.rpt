@@ -1,0 +1,218 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date             : Tue Nov  3 15:54:01 2020
+| Host             : DESKTOP-N9UHTE5 running 64-bit major release  (build 9200)
+| Command          : report_power -file top_128_power_routed.rpt -pb top_128_power_summary_routed.pb -rpx top_128_power_routed.rpx
+| Design           : top_128
+| Device           : xc7s15ftgb196-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 0.680        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 0.659        |
+| Device Static (W)        | 0.020        |
+| Effective TJA (C/W)      | 3.4          |
+| Max Ambient (C)          | 82.7         |
+| Junction Temperature (C) | 27.3         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Clocks         |     0.006 |       10 |       --- |             --- |
+| Slice Logic    |     0.157 |    13288 |       --- |             --- |
+|   LUT as Logic |     0.132 |     5616 |      8000 |           70.20 |
+|   CARRY4       |     0.017 |     1407 |      2000 |           70.35 |
+|   Register     |     0.008 |     4342 |     16000 |           27.14 |
+|   F7/F8 Muxes  |    <0.001 |       12 |      8000 |            0.15 |
+|   BUFG         |    <0.001 |        2 |        16 |           12.50 |
+|   Others       |     0.000 |      135 |       --- |             --- |
+| Signals        |     0.126 |     9008 |       --- |             --- |
+| Block RAM      |     0.003 |      5.5 |        10 |           55.00 |
+| MMCM           |     0.224 |        2 |         2 |          100.00 |
+| I/O            |     0.142 |       31 |       100 |           31.00 |
+| Static Power   |     0.020 |          |           |                 |
+| Total          |     0.680 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.300 |       0.296 |      0.004 |
+| Vccaux    |       1.800 |     0.132 |       0.124 |      0.007 |
+| Vcco33    |       3.300 |     0.043 |       0.042 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.000 |       0.000 |      0.000 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 3.4                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 15.4                     |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++--------------------+---------------------------------------------------------------+-----------------+
+| Clock              | Domain                                                        | Constraint (ns) |
++--------------------+---------------------------------------------------------------+-----------------+
+| CLKFBIN            | HDMI/Mini_HDMI_Driver/U0/ClockGenInternal.ClockGenX/CLKFBIN   |            13.2 |
+| PixelClkIO         | HDMI/Mini_HDMI_Driver/U0/ClockGenInternal.ClockGenX/PixelClk  |            13.2 |
+| SerialClkIO        | HDMI/Mini_HDMI_Driver/U0/ClockGenInternal.ClockGenX/SerialClk |             2.6 |
+| clk_out1_clk_wiz_0 | HDMI/clk_10/inst/clk_out1_clk_wiz_0                           |            13.2 |
+| clkfbout_clk_wiz_0 | HDMI/clk_10/inst/clkfbout_clk_wiz_0                           |            50.0 |
+| sys_clk_pin        | clk_100MHz                                                    |            10.0 |
+| sys_clk_pin        | clk_100MHz_IBUF_BUFG                                          |            10.0 |
++--------------------+---------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++--------------------------------------------------+-----------+
+| Name                                             | Power (W) |
++--------------------------------------------------+-----------+
+| top_128                                          |     0.659 |
+|   HDMI                                           |     0.369 |
+|     Driver_ADC_0                                 |     0.005 |
+|       Clock_ADC                                  |    <0.001 |
+|         inst                                     |    <0.001 |
+|       Freq_Cal_0                                 |    <0.001 |
+|       Ram_Wave                                   |     0.003 |
+|         U0                                       |     0.003 |
+|           inst_blk_mem_gen                       |     0.003 |
+|             gnbram.gnativebmg.native_blk_mem_gen |     0.003 |
+|               valid.cstr                         |     0.003 |
+|                 bindec_a.bindec_inst_a           |    <0.001 |
+|                 bindec_b.bindec_inst_b           |    <0.001 |
+|                 has_mux_b.B                      |    <0.001 |
+|                 ramloop[0].ram.r                 |     0.002 |
+|                   prim_noinit.ram                |     0.002 |
+|                 ramloop[1].ram.r                 |    <0.001 |
+|                   prim_noinit.ram                |    <0.001 |
+|                 ramloop[2].ram.r                 |    <0.001 |
+|                   prim_noinit.ram                |    <0.001 |
+|                 ramloop[3].ram.r                 |    <0.001 |
+|                   prim_noinit.ram                |    <0.001 |
+|                 ramloop[4].ram.r                 |    <0.001 |
+|                   prim_noinit.ram                |    <0.001 |
+|     HDMI0                                        |    <0.001 |
+|     Mini_HDMI_Driver                             |     0.233 |
+|       U0                                         |     0.233 |
+|         ClockGenInternal.ClockGenX               |     0.094 |
+|           LockLostReset                          |    <0.001 |
+|             SyncAsyncx                           |    <0.001 |
+|           PLL_LockSyncAsync                      |    <0.001 |
+|         ClockSerializer                          |     0.033 |
+|         DataEncoders[0].DataEncoder              |    <0.001 |
+|         DataEncoders[0].DataSerializer           |     0.035 |
+|         DataEncoders[1].DataEncoder              |    <0.001 |
+|         DataEncoders[1].DataSerializer           |     0.035 |
+|         DataEncoders[2].DataEncoder              |    <0.001 |
+|         DataEncoders[2].DataSerializer           |     0.035 |
+|         LockLostReset                            |    <0.001 |
+|           SyncAsyncx                             |    <0.001 |
+|     clk_10                                       |     0.130 |
+|       inst                                       |     0.130 |
+|     video_adc                                    |    <0.001 |
+|   QSPI                                           |     0.002 |
+|     u_blk_mem_gen_0                              |    <0.001 |
+|       U0                                         |    <0.001 |
+|         inst_blk_mem_gen                         |    <0.001 |
+|           gnbram.gnativebmg.native_blk_mem_gen   |    <0.001 |
+|             valid.cstr                           |    <0.001 |
+|               ramloop[0].ram.r                   |    <0.001 |
+|                 prim_noinit.ram                  |    <0.001 |
+|     u_qspi_slave                                 |     0.001 |
+|   dac_instance                                   |     0.002 |
+|     inst                                         |    <0.001 |
+|       inst                                       |    <0.001 |
+|   fir_instance                                   |     0.279 |
+|     your_instance_name                           |    <0.001 |
+|       inst                                       |    <0.001 |
+|   qspi_d0_IOBUF_inst                             |    <0.001 |
+|   qspi_d1_IOBUF_inst                             |    <0.001 |
+|   qspi_d2_IOBUF_inst                             |    <0.001 |
+|   qspi_d3_IOBUF_inst                             |    <0.001 |
+|   uart                                           |     0.001 |
+|     clk_div                                      |    <0.001 |
+|     uart_rx                                      |    <0.001 |
++--------------------------------------------------+-----------+
+
+

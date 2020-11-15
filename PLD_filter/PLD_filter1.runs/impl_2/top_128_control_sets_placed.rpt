@@ -1,0 +1,203 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri Nov 13 01:41:35 2020
+| Host         : DESKTOP-N9UHTE5 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_128_control_sets_placed.rpt
+| Design       : top_128
+| Device       : xc7s25
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   132 |
+| Unused register locations in slices containing registers |   210 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            4 |
+|      4 |            2 |
+|      6 |           14 |
+|      8 |            7 |
+|     10 |            4 |
+|     12 |            1 |
+|     14 |            2 |
+|    16+ |           98 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             550 |          153 |
+| No           | No                    | Yes                    |            8096 |         1278 |
+| No           | Yes                   | No                     |             560 |           83 |
+| Yes          | No                    | No                     |             560 |          131 |
+| Yes          | No                    | Yes                    |             570 |           84 |
+| Yes          | Yes                   | No                     |             622 |          146 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------+------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+----------------+
+|             Clock Signal            |                              Enable Signal                             |                                       Set/Reset Signal                                      | Slice Load Count | Bel Load Count |
++-------------------------------------+------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+----------------+
+|  clk_100MHz_IBUF_BUFG               |                                                                        | HDMI/freq_display/osd_display_dot/timing_gen_xy_m0/x_cnt_reg[0]_0                           |                1 |              2 |
+|  i2c_dri_clk                        | dacout/u_i2c_drive/scl_i_1_n_0                                         | dacout/u_i2c_drive/sda_dir_reg_0                                                            |                1 |              2 |
+|  dac_instance/inst/inst/Clk         | dac_instance/DAC_Sync_i_1_n_0                                          |                                                                                             |                1 |              2 |
+|  dac_instance/inst/inst/Clk         | dac_instance/DAC_Din_i_1_n_0                                           |                                                                                             |                1 |              2 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/Mini_HDMI_Driver/U0/ClockGenInternal.ClockGenX/in0                                     |                1 |              4 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/Mini_HDMI_Driver/U0/ClockGenInternal.ClockGenX/LockLostReset/aRst_int_0                |                1 |              4 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/max_display/osd_display_1/clear                                                        |                1 |              6 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/osd_display_freq/clear                                                                 |                1 |              6 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/osd_display_max/clear                                                                  |                1 |              6 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/freq_display/osd_display_0/clear                                                       |                1 |              6 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/freq_display/osd_display_1/clear                                                       |                1 |              6 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/freq_display/osd_display_2/clear                                                       |                1 |              6 |
+|  clk_100MHz_IBUF_BUFG               | fir_instance/coeff62[6]_i_2_n_0                                        | fir_instance/coeff62[6]_i_1_n_0                                                             |                1 |              6 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/freq_display/osd_display_dot/clear                                                     |                1 |              6 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/osd_display_title/clear                                                                |                1 |              6 |
+|  uart_top/clk_div_baud/clk_115200   |                                                                        |                                                                                             |                1 |              6 |
+|  uart_blue/clk_div_baud/clk_115200  |                                                                        |                                                                                             |                1 |              6 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/max_display/osd_display_0/clear                                                        |                1 |              6 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/max_display/osd_display_2/clear                                                        |                1 |              6 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/max_display/osd_display_dot/clear                                                      |                1 |              6 |
+|  clk_100MHz_IBUF_BUFG               | fir_instance/coeff13[8]_i_1_n_0                                        | fir_instance/coeff13[3]_i_1_n_0                                                             |                4 |              8 |
+|  clk_100MHz_IBUF_BUFG               | fir_instance/coeff13[8]_i_1_n_0                                        | fir_instance/coeff61[4]_i_1_n_0                                                             |                2 |              8 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | dacout/u_i2c_drive/sda_dir_reg_0                                                            |                4 |              8 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/Mini_HDMI_Driver/U0/ClockGenInternal.ClockGenX/LockLostReset/SyncAsyncx/oSyncStages[1] |                2 |              8 |
+|  clk_100MHz_IBUF_BUFG               | fir_instance/coeff13[8]_i_1_n_0                                        | fir_instance/coeff13[5]_i_1_n_0                                                             |                4 |              8 |
+|  clk_100MHz_IBUF_BUFG               |                                                                        | fir_instance/coeff9[0]_i_1_n_0                                                              |                2 |              8 |
+|  clk_100MHz_IBUF_BUFG               |                                                                        | fir_instance/coeff16[0]_i_1_n_0                                                             |                3 |              8 |
+|  clk_100MHz_IBUF_BUFG               | HDMI/Driver_ADC_0/Freq_Cal_0/measure_cnt[4]_i_1_n_0                    | HDMI/Driver_ADC_0/Freq_Cal_0/trigger_lcnt_reg[7]_0                                          |                2 |             10 |
+|  dac_instance/inst/inst/Clk         |                                                                        | dac_instance/DAC_Cnt[4]_i_1_n_0                                                             |                2 |             10 |
+|  uart_blue/clk_div_baud/clk_115200  | uart_blue/uart_rx_blue/cur_st[1]                                       | uart_blue/uart_rx_blue/count                                                                |                1 |             10 |
+|  uart_top/clk_div_baud/clk_115200   | uart_top/uart_rx/count03_out                                           | uart_top/uart_rx/count                                                                      |                2 |             10 |
+|  clk_100MHz_IBUF_BUFG               |                                                                        | HDMI/Driver_ADC_0/Freq_Cal_0/FSM_onehot_state_current[3]_i_2_n_0                            |                4 |             12 |
+| ~clk_100MHz_IBUF_BUFG               |                                                                        |                                                                                             |                7 |             14 |
+|  clk_100MHz_IBUF_BUFG               | fir_instance/coeff18                                                   |                                                                                             |                3 |             14 |
+|  i2c_dri_clk                        |                                                                        |                                                                                             |                4 |             16 |
+|  clk_100MHz_IBUF_BUFG               | uart_top/uart_rx/E[0]                                                  |                                                                                             |                3 |             16 |
+|  clk_100MHz_IBUF_BUFG               | HDMI/Driver_ADC_0/Freq_Cal_0/max_data_o                                | HDMI/Driver_ADC_0/Freq_Cal_0/FSM_onehot_state_current[3]_i_2_n_0                            |                4 |             16 |
+|  clk_100MHz_IBUF_BUFG               | HDMI/Driver_ADC_0/Freq_Cal_0/max_data[7]_i_1_n_0                       | HDMI/Driver_ADC_0/Freq_Cal_0/FSM_onehot_state_current[3]_i_2_n_0                            |                2 |             16 |
+|  clk_100MHz_IBUF_BUFG               |                                                                        | HDMI/Driver_ADC_0/Freq_Cal_0/trigger_lcnt_reg[7]_0                                          |                2 |             16 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | HDMI/freq_display/osd_display_dot/timing_gen_xy_m0/x_cnt_reg[0]_0                           |                8 |             16 |
+|  HDMI/clk_10/inst/clk_out1          | i_rst_IBUF                                                             |                                                                                             |                5 |             16 |
+|  uart_top/clk_div_baud/clk_115200   | uart_top/uart_rx/p_0_out[0]                                            |                                                                                             |                2 |             16 |
+|  uart_top/clk_div_baud/clk_115200   | uart_top/uart_rx/data_i[7]_i_1_n_0                                     |                                                                                             |                3 |             16 |
+|  uart_blue/clk_div_baud/clk_115200  | uart_blue/uart_rx_blue/cur_st[1]                                       |                                                                                             |                2 |             16 |
+|  clk_100MHz_IBUF_BUFG               | fir_instance/coeff13[8]_i_1_n_0                                        | fir_instance/coeff22[4]_i_1_n_0                                                             |                7 |             16 |
+|  clk_100MHz_IBUF_BUFG               | HDMI/Driver_ADC_0/Freq_Cal_0/period_o0                                 | HDMI/max_display/osd_display_2/timing_gen_xy_m0/y_cnt_reg[5]_0                              |                4 |             18 |
+|  i2c_dri_clk                        | dacout/u_i2c_drive/addr_t                                              | dacout/u_i2c_drive/sda_dir_reg_0                                                            |                2 |             18 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/Mini_HDMI_Driver/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0              |                3 |             20 |
+|  clk_100MHz_IBUF_BUFG               | fir_instance/coeff16[0]_i_2_n_0                                        | fir_instance/coeff16[0]_i_1_n_0                                                             |                9 |             22 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/freq_display/osd_display_2/region_active                          | HDMI/freq_display/osd_display_2/osd_ram_addr0                                               |                3 |             22 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/max_display/osd_display_0/region_active                           | HDMI/max_display/osd_display_0/osd_ram_addr0                                                |                3 |             22 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/max_display/osd_display_1/region_active                           | HDMI/max_display/osd_display_1/osd_ram_addr0                                                |                3 |             22 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/freq_display/osd_display_dot/region_active                        | HDMI/freq_display/osd_display_dot/osd_ram_addr0                                             |                3 |             22 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/max_display/osd_display_2/region_active                           | HDMI/max_display/osd_display_2/osd_ram_addr0                                                |                3 |             22 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/max_display/osd_display_dot/region_active                         | HDMI/max_display/osd_display_dot/osd_ram_addr0                                              |                3 |             22 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/freq_display/osd_display_0/region_active                          | HDMI/freq_display/osd_display_0/osd_ram_addr0                                               |                3 |             22 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/freq_display/osd_display_1/region_active                          | HDMI/freq_display/osd_display_1/osd_ram_addr0                                               |                3 |             22 |
+|  dacout/instance_name/inst/clk_out1 |                                                                        | dacout/u_i2c_drive/sda_dir_reg_0                                                            |                3 |             22 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/freq_display/osd_display_1/timing_gen_xy_m0/y_cnt[0]_i_1__7_n_0   | HDMI/freq_display/osd_display_dot/timing_gen_xy_m0/x_cnt_reg[0]_0                           |                3 |             24 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/freq_display/osd_display_2/timing_gen_xy_m0/y_cnt[0]_i_1__8_n_0   | HDMI/freq_display/osd_display_dot/timing_gen_xy_m0/x_cnt_reg[0]_0                           |                3 |             24 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/max_display/osd_display_0/timing_gen_xy_m0/y_cnt[0]_i_1__2_n_0    | HDMI/max_display/osd_display_2/timing_gen_xy_m0/y_cnt_reg[5]_0                              |                3 |             24 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/max_display/osd_display_1/timing_gen_xy_m0/y_cnt[0]_i_1__3_n_0    | HDMI/max_display/osd_display_2/timing_gen_xy_m0/y_cnt_reg[5]_0                              |                3 |             24 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/max_display/osd_display_2/timing_gen_xy_m0/y_cnt[0]_i_1__4_n_0    | HDMI/max_display/osd_display_2/timing_gen_xy_m0/y_cnt_reg[5]_0                              |                3 |             24 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/osd_display_title/timing_gen_xy_m0/y_cnt[0]_i_1_n_0               | HDMI/Driver_ADC_0/Freq_Cal_0/trigger_lcnt_reg[7]_0                                          |                3 |             24 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/osd_display_freq/timing_gen_xy_m0/y_cnt[0]_i_1__0_n_0             | HDMI/max_display/osd_display_2/timing_gen_xy_m0/y_cnt_reg[5]_0                              |                3 |             24 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/osd_display_max/timing_gen_xy_m0/y_cnt[0]_i_1__1_n_0              | HDMI/freq_display/osd_display_dot/timing_gen_xy_m0/x_cnt_reg[0]_0                           |                3 |             24 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/freq_display/osd_display_dot/timing_gen_xy_m0/y_cnt[0]_i_1__9_n_0 | HDMI/freq_display/osd_display_dot/timing_gen_xy_m0/x_cnt_reg[0]_0                           |                3 |             24 |
+|  clk_100MHz_IBUF_BUFG               | HDMI/Driver_ADC_0/Freq_Cal_0/trigger_lcnt                              | HDMI/Driver_ADC_0/Freq_Cal_0/trigger_lcnt_reg[7]_0                                          |                6 |             24 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/max_display/osd_display_dot/timing_gen_xy_m0/y_cnt[0]_i_1__5_n_0  | HDMI/max_display/osd_display_2/timing_gen_xy_m0/y_cnt_reg[5]_0                              |                3 |             24 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/HDMI0/vsync_cnt21_out                                             | HDMI/HDMI0/hsync_cnt_reg[0]_0                                                               |                3 |             24 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/freq_display/osd_display_0/timing_gen_xy_m0/y_cnt[0]_i_1__6_n_0   | HDMI/freq_display/osd_display_dot/timing_gen_xy_m0/x_cnt_reg[0]_0                           |                3 |             24 |
+|  clk_100MHz_IBUF_BUFG               | HDMI/Driver_ADC_0/Freq_Cal_0/trigger_cnt[12]_i_1_n_0                   | HDMI/Driver_ADC_0/Freq_Cal_0/FSM_onehot_state_current[3]_i_2_n_0                            |                6 |             26 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/Driver_ADC_0/addr_wr0                                             | HDMI/Driver_ADC_0/addr_wr[0]_i_1_n_0                                                        |                4 |             30 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/osd_display_max/region_active                                     | HDMI/osd_display_max/osd_ram_addr0                                                          |                4 |             30 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/osd_display_freq/region_active                                    | HDMI/osd_display_freq/osd_ram_addr0                                                         |                4 |             30 |
+|  clk_100MHz_IBUF_BUFG               | uart_top/uart_rx/data_reg[0]_rep__0                                    |                                                                                             |                7 |             32 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/osd_display_title/region_active                                   | HDMI/osd_display_title/osd_ram_addr0                                                        |                4 |             32 |
+|  clk_100MHz_IBUF_BUFG               | HDMI/Driver_ADC_0/Freq_Cal_0/trigger_lcnt                              | HDMI/Driver_ADC_0/Freq_Cal_0/FSM_onehot_state_current[3]_i_2_n_0                            |                4 |             40 |
+|  clk_100MHz_IBUF_BUFG               |                                                                        |                                                                                             |               19 |             44 |
+|  HDMI/clk_10/inst/clk_out1          | HDMI/Driver_ADC_0/flg_trigger                                          | HDMI/HDMI0/hsync_cnt_reg[0]_0                                                               |                5 |             48 |
+|  clk_100MHz_IBUF_BUFG               |                                                                        | uart_top/clk_div_baud/Count[0]_i_1_n_0                                                      |                8 |             64 |
+|  clk_100MHz_IBUF_BUFG               |                                                                        | uart_blue/clk_div_baud/Count[0]_i_1__0_n_0                                                  |                8 |             64 |
+|  i2c_dri_clk                        |                                                                        | dacout/u_i2c_drive/sda_dir_reg_0                                                            |               14 |             64 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/Driver_ADC_0/Clock_ADC/inst/Count[0]_i_1_n_0                                           |                8 |             64 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/Mini_HDMI_Driver/U0/DataEncoders[0].DataEncoder/SR[0]                                  |               14 |             64 |
+|  clk_100MHz_IBUF_BUFG               | HDMI/Driver_ADC_0/Freq_Cal_0/trigger_hcnt[31]_i_1_n_0                  | HDMI/Driver_ADC_0/Freq_Cal_0/FSM_onehot_state_current[3]_i_2_n_0                            |               12 |             64 |
+|  clk_100MHz_IBUF_BUFG               |                                                                        | fir_instance/your_instance_name2/inst/Count[0]_i_1_n_0                                      |                8 |             64 |
+|  clk_100MHz_IBUF_BUFG               |                                                                        | fir_instance/your_instance_name1/inst/Count[0]_i_1_n_0                                      |                8 |             64 |
+|  clk_100MHz_IBUF_BUFG               |                                                                        | dac_instance/inst/inst/Count[0]_i_1_n_0                                                     |                8 |             64 |
+|  clk_100MHz_IBUF_BUFG               | fir_instance/coeff14[3]_i_2_n_0                                        | fir_instance/coeff14[3]_i_1_n_0                                                             |               28 |             78 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/Driver_ADC_0/Freq_Cal_0/trigger_lcnt_reg[7]_0                                          |               18 |            100 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/HDMI0/hsync_cnt_reg[0]_0                                                               |               18 |            102 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/max_display/osd_display_2/timing_gen_xy_m0/y_cnt_reg[5]_0                              |               15 |            120 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        | HDMI/freq_display/osd_display_dot/timing_gen_xy_m0/x_cnt_reg[0]_0                           |               16 |            122 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/sample_41[3]_i_1_n_0                                                           |               22 |            128 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/sample_17[3]_i_1_n_0                                                           |               22 |            128 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/sample_25[3]_i_1_n_0                                                           |               24 |            128 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/sample_33[3]_i_1_n_0                                                           |               29 |            128 |
+|  clk_100MHz_IBUF_BUFG               | fir_instance/p_1_in[1]                                                 | fir_instance/coeff16[2]_i_1_n_0                                                             |               48 |            158 |
+|  clk_ADC_OBUF_BUFG                  | i_rst_IBUF                                                             |                                                                                             |               32 |            160 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/sample_1[6]_i_1_n_0                                                            |               28 |            192 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/mult_65[17]_i_2_n_0                                                            |               32 |            206 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/mult_6[17]_i_2_n_0                                                             |               32 |            206 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/mult_65[16]_i_1_n_0                                                            |               36 |            206 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/add_level3_8[16]_i_1_n_0                                                       |               28 |            206 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/sample_1[7]_i_1_n_0                                                            |               42 |            222 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/sample_37[6]_i_1_n_0                                                           |               36 |            222 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/sample_49[3]_i_1_n_0                                                           |               31 |            222 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/sample_16[7]_i_1_n_0                                                           |               34 |            222 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/sample_49[2]_i_1_n_0                                                           |               39 |            222 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/sample_25[6]_i_1_n_0                                                           |               42 |            222 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/mult_40[6]_i_2_n_0                                                             |               33 |            228 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/mult_40[17]_i_2_n_0                                                            |               33 |            228 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/mult_34[3]_i_1_n_0                                                             |               35 |            228 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/add_level_20[17]_i_2_n_0                                                       |               33 |            228 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/add_level2_10[17]_i_2_n_0                                                      |               32 |            228 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/add_data_39[2]_i_1_n_0                                                         |               32 |            228 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/add_data_39[8]_i_2_n_0                                                         |               39 |            228 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/add_data_15[8]_i_2_n_0                                                         |               37 |            240 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/add_data_12[5]_i_1_n_0                                                         |               40 |            240 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/mult_20[12]_i_1_n_0                                                            |               34 |            240 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/mult_16[17]_i_2_n_0                                                            |               33 |            240 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/mult_12[3]_i_1_n_0                                                             |               37 |            240 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/add_level_12[12]_i_1_n_0                                                       |               35 |            240 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/add_level2_4[17]_i_2_n_0                                                       |               35 |            240 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/add_level_8[17]_i_2_n_0                                                        |               36 |            240 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/sample_1[3]_i_1_n_0                                                            |               44 |            256 |
+|  clk_100MHz_IBUF_BUFG               | fir_instance/coeff13[8]_i_1_n_0                                        |                                                                                             |               72 |            270 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/add_data_59[8]_i_2_n_0                                                         |               42 |            288 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/add_data_63[8]_i_2_n_0                                                         |               42 |            288 |
+|  clk_ADC_OBUF_BUFG                  |                                                                        | fir_instance/add_data_55[8]_i_2_n_0                                                         |               42 |            288 |
+|  HDMI/clk_10/inst/clk_out1          |                                                                        |                                                                                             |              134 |            526 |
++-------------------------------------+------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+----------------+
+
+
